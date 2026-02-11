@@ -97,15 +97,15 @@ h2 {
     animation: typewriter 10s steps(15) normal infinite, blinkTextCursor 1s step-end infinite;
     white-space: nowrap;
     overflow: hidden;
-    
+
 }
 
 .hero__text {
     color: var(--color-bg);
     font-weight: 200;
     line-height: 1.2rem;
-    padding: 3rem 0 2rem 0;
-    width: 80%;
+    padding: 3rem 3rem 4rem 3rem;
+    font-size: clamp(1.25rem, 4.5vw, 1, 75rem);
 }
 
 
@@ -134,30 +134,60 @@ h2 {
     padding: 1rem;
 }
 
-.navbar img {
-    width: 16rem;
+.navbar__logo {
+    width: 12rem;
     margin: 1rem 3rem .5rem 3rem;
 }
 
-.navbar__links ul {
+.navbar__menu ul {
     display: flex;
     margin: 1rem 0rem 0rem 0rem;
     padding: 0;
 }
 
-.navbar__links--link {
-    list-style: none;
-    color: var(--font-color);
-    text-decoration: none;
-    padding: .8rem;
-    font-weight: bold;
-    text-transform: uppercase;
+.navbar__item {
     display: block;
     text-align: center;
+    list-style: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: .9rem;
+    color: var(--color-bg);
+    padding: .5rem 1.4rem;
 }
 
 
 
+
+/*------------------------------------*\
+  #BUTTON
+\*------------------------------------*/
+
+.button {
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 9999px;
+    border: 2px solid var(--color-bg);
+    padding: .5em 1.4rem;
+}
+
+.button-primary {
+    font-weight: 800;
+    margin-right: .5rem;
+    color: var(--color-text);
+    background-color: var(--color-text-light);
+    border: none;
+    font-weight: ;
+}
+
+.button-secondary {
+    font-weight: 400;
+    margin-left: .5rem;
+    color: var(--color-text-light);
+    border: 2px solid var(--color-text-light);
+}
 
 
 /*------------------------------------*\
