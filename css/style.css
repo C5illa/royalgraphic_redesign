@@ -1,0 +1,98 @@
+:root {
+    --color-text: #0A1522;
+    --color-text-light: #00B3CC;
+    --color-bg: #ffffff;
+    --colog-bg-light: #D7ECEF;
+    --color-strong: #FFC859;
+    --font-primary: font-family: "Poppins", sans-serif;
+    --font-heading: font-family: "Rubik", sans-serif;
+}
+
+
+
+
+
+/*------------------------------------*\
+  #BOX-SIZING
+\*------------------------------------*/
+
+    * {
+        box-sizing: border-box;
+    }
+
+
+
+
+
+/*------------------------------------*\
+  #MARGINS
+\*------------------------------------*/
+
+    html {
+        margin: 0px;
+        padding: 0px;
+    }
+
+
+
+
+
+/*------------------------------------*\
+  #HEADINGS
+\*------------------------------------*/
+
+    h1 { font-size: clamp(2rem, 5vw, 3.5rem); }
+
+    h2 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+
+    h3 { font-size: clamp(1.5rem, 3.5vw, 2rem); }
+
+    h4 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
+
+
+
+
+    
+/*------------------------------------*\
+  #FONTS
+\*------------------------------------*/
+
+    html {
+        font-size: 16px;
+        font-family: var(--font-primary);
+        color: var(--color-text);
+        background-color: var(--color-bg);
+    }
+
+    #services,
+    #portfolio,
+    #price,
+    #order,
+    #contact {
+        text-transform: uppercase;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+        font-size: 1.8rem;
+        font-weight: bold;
+        letter-spacing: .5px;
+        text-align: center;
+        font-family: var(--font-pair);
+    }
+
+
+    
+    
+    
+/*------------------------------------*\
+  #HERO
+\*------------------------------------*/
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  background: url('assets/hero_bg.jpg') no-repeat center;
+  background-size: cover;
+}
