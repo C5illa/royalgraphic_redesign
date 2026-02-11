@@ -4,8 +4,8 @@
     --color-bg: #ffffff;
     --colog-bg-light: #D7ECEF;
     --color-strong: #FFC859;
-    --font-primary: font-family: "Poppins", sans-serif;
-    --font-heading: font-family: "Rubik", sans-serif;
+    --font-primary: "Rubik", sans-serif;
+    --font-heading: "Poppins", sans-serif;
 }
 
 
@@ -16,9 +16,9 @@
   #BOX-SIZING
 \*------------------------------------*/
 
-    * {
-        box-sizing: border-box;
-    }
+* {
+    box-sizing: border-box;
+}
 
 
 
@@ -28,71 +28,321 @@
   #MARGINS
 \*------------------------------------*/
 
-    html {
-        margin: 0px;
-        padding: 0px;
-    }
+html {
+    margin: 0px;
+    padding: 0px;
+}
 
 
 
 
 
 /*------------------------------------*\
-  #HEADINGS
+  #HEADINGS & FONTS
 \*------------------------------------*/
 
-    h1 { font-size: clamp(2rem, 5vw, 3.5rem); }
-
-    h2 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
-
-    h3 { font-size: clamp(1.5rem, 3.5vw, 2rem); }
-
-    h4 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
-
+html {
+    font-size: 16px;
+    font-family: var(--font-primary);
+    color: var(--color-text);
+    background-color: var(--color-bg);
+}
 
 
+h1 {
+    font-size: clamp(2rem, 5vw, 5rem);
+}
 
+h2 {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+}
+
+h3 {
+    font-size: clamp(1.5rem, 3.5vw, 2rem);
+}
+
+h4 {
+    font-size: clamp(1.25rem, 3vw, 1.75rem);
+}
+
+h1,
+h2,
+h3,
+h4,
+.hero {
+    font-family: var(--font-heading);
+}
+
+h1,
+h2 {
+    font-weight: 800;
+    padding: .4rem 0;
+    color: var(--color-bg);
+    text-align: center;
+}
+
+.hero__title {
+    text-align: left;
+}
+
+.hero__title--typewriter {
+    display: inline-block;
+    text-align: left;
+    color: var(--color-text-light);
+    font-size: clamp(1.5rem, 3vw, 3rem);
+    font-weight: 200;
+    padding: 0.2rem 0 0.3rem 0;
+    cursor: pointer;
+    border-right: 2.32px solid;
+    animation: typewriter 10s steps(15) normal infinite, blinkTextCursor 1s step-end infinite;
+    white-space: nowrap;
+    overflow: hidden;
     
+}
+
+.hero__text {
+    color: var(--color-bg);
+    font-weight: 200;
+    line-height: 1.2rem;
+    padding: 3rem 0 2rem 0;
+    width: 80%;
+}
+
+
+
+
 /*------------------------------------*\
-  #FONTS
+  #NAVBAR
 \*------------------------------------*/
 
-    html {
-        font-size: 16px;
-        font-family: var(--font-primary);
-        color: var(--color-text);
-        background-color: var(--color-bg);
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    background: url('assets/cover.jpg') no-repeat center;
+    background-size: cover;
+    height: 520px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding: 1rem;
+}
+
+.navbar img {
+    width: 16rem;
+    margin: 1rem 3rem .5rem 3rem;
+}
+
+.navbar__links ul {
+    display: flex;
+    margin: 1rem 0rem 0rem 0rem;
+    padding: 0;
+}
+
+.navbar__links--link {
+    list-style: none;
+    color: var(--font-color);
+    text-decoration: none;
+    padding: .8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+}
+
+
+
+
+
+/*------------------------------------*\
+  #HAMBURGER BUTTON & ANIMATION
+\*------------------------------------*/
+
+/*HAMBURGER BUTTON*/
+
+._navbar__hamburger {
+    position: absolute;
+    top: 2.4rem;
+    right: 2.4rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 24px;
+    height: 16px;
+}
+
+.navbar__hamburger span {
+    height: 3px;
+    background-color: var(--color-bg);
+}
+
+.bar1 {
+    width: 100%;
+    border-radius: 9999px;
+}
+
+.bar2 {
+    width: 80%;
+    border-radius: 9999px;
+}
+
+.bar3 {
+    width: 100%;
+    border-radius: 9999px;
+}
+
+/*HAMBURGER MENU ANIMATION*/
+
+.bar1 {
+    transition: all .5s ease;
+    transform-origin: center;
+}
+
+.bar2 {
+    transition: all .5s ease;
+}
+
+.bar3 {
+    transition: all .5s ease;
+    transform-origin: center;
+}
+
+.navbar__hamburger.open .bar1 {
+    transform: translateY(6.5px) rotate(45deg);
+}
+
+.navbar__hamburger.open .bar2 {
+    width: 0%;
+    opacity: 0%;
+}
+
+.navbar__hamburger.open .bar3 {
+    transform: translateY(-6.5px) rotate(-45deg);
+}
+
+/***/
+
+@media (max-width: 1080px) {
+
+    .navbar__hamburger {
+        display: flex;
+        border-radius: 9px;
     }
 
-    #services,
-    #portfolio,
-    #price,
-    #order,
-    #contact {
-        text-transform: uppercase;
-        padding-top: 2.5rem;
-        padding-bottom: 2.5rem;
-        font-size: 1.8rem;
-        font-weight: bold;
-        letter-spacing: .5px;
-        text-align: center;
-        font-family: var(--font-pair);
+    .navbar__menu {
+        width: 100%;
+        display: none;
+        animation: openmenu .3s;
+        white-space: nowrap;
+        overflow: hidden;
+        transform-origin: top center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar__menu ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar__item {
+        padding: .3rem 0rem;
     }
 
 
-    
-    
-    
+
+    @keyframes openmenu {
+
+        0% {
+            transform: scaleY(0)
+        }
+
+        80% {
+            transform: scaleY(1.05)
+        }
+
+        100% {
+            transform: scaleY(1)
+        }
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
 /*------------------------------------*\
   #HERO
 \*------------------------------------*/
 
-.hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: start;
-  width: 100%;
-  background: url('assets/hero_bg.jpg') no-repeat center;
-  background-size: cover;
+.site-header {
+    width: 100%;
+    background: url('/assets/hero_bg.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.hero-content {
+    padding: 10rem 3rem 5rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/*------------------------------------*\
+  #ANIMATIONS
+\*------------------------------------*/
+
+
+/*typewriter animation*/
+
+@keyframes typewriter {
+    0% {
+        max-width: 0%;
+    }
+
+    15% {
+        max-width: 100%
+    }
+
+    85% {
+        max-width: 100%
+    }
+
+    85.05% {
+        max-width: 0%;
+    }
+
+    100% {
+        max-width: 0%;
+    }
+}
+
+@keyframes blinkTextCursor {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: var(--color-text-light);
+    }
 }
