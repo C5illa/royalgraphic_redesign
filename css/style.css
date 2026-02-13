@@ -203,7 +203,7 @@ h2 {
 }
 
 .navbar__item {
-     transition: text-decoration .3s ease-in, text-decoration-color .3s ease-in, transform .1s ease-in;
+    transition: text-decoration .3s ease-in, text-decoration-color .3s ease-in, transform .1s ease-in;
 }
 
 .navbar__item:hover {
@@ -295,17 +295,17 @@ h2 {
 
 /*HAMBURGER MENU ANIMATION*/
 
+.bar1,
+.bar2,
+.bar3 {
+    transition: transform .4s ease;
+}
+
 .bar1 {
-    transition: all .5s ease;
     transform-origin: center;
 }
 
-.bar2 {
-    transition: all .5s ease;
-}
-
 .bar3 {
-    transition: all .5s ease;
     transform-origin: center;
 }
 
@@ -375,7 +375,7 @@ h2 {
 
     .navbar__menu.active {
         display: block;
-    }    
+    }
 
     .navbar__menu.active .button-navbar {
         border: none;
@@ -395,9 +395,8 @@ h2 {
 
 @media (max-width: 380px) {
 
-    .navbar__logo {
-        max-width: 60vw;
-        margin-left: 1.5rem;
+    .navbar__hamburger {
+        top: 1.6rem;
     }
 }
 
