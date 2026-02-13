@@ -380,24 +380,16 @@ h2 {
 
     .navbar__menu.active .button-navbar {
         border: none;
-        transition: transform .3s ease-in-out, color .4s ease-in-out;
-    }
-
-.navbar__menu.active .navbar__item {
-        transition: transform .3s ease-in-out;
     }
 
     .navbar__menu.active .navbar__item:hover {
         text-decoration: none;
-        transform: scale(1.1);
+        transform: none;
     }
 
     .navbar__menu.active .button-navbar:hover {
         text-decoration: none;
-        color: var(--color-text-light);
-        transform: scale(1.1);
-        border-color: transparent;
-        
+        transform: none;
     }
 }
 
