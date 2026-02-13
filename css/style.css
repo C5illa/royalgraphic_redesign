@@ -100,14 +100,7 @@ h2 {
     border: 2px solid var(--color-bg);
     padding: .4rem 2.3rem;
     line-height: normal;
-}
-
-.hero-button {
-    padding: 1rem;
-}
-
-.button:hover {
-    transform: scale(1.05);
+    transition: 0.3s ease-in;
 }
 
 .button-primary {
@@ -115,11 +108,14 @@ h2 {
     margin-right: .5rem;
     color: var(--color-text);
     background-color: var(--color-text-light);
-    border: none;
+    border-color: transparent;
 }
 
 .button-primary:hover {
-    transform: scale(1.05);
+    background-color: transparent;
+    color: var(--color-text-light);
+    transform: scale(1.15);
+
 }
 
 .button-secondary {
@@ -130,9 +126,8 @@ h2 {
 }
 
 .button-secondary:hover {
-border: 2px solid transparent;
-transform: scale(1.05);
-font-weight: 800;
+    border: 2px solid transparent;
+    transform: scale(1.15);
 }
 
 
@@ -194,7 +189,8 @@ font-weight: 800;
     display: block;
 }
 
-.navbar__item {
+.navbar__item,
+.button-navbar {
     display: block;
     text-align: center;
     list-style: none;
@@ -215,7 +211,7 @@ font-weight: 800;
     text-underline-offset: 5px;
     transform: translateY(-3px);
     transition: text-decoration-color .8s ease-in-out, transform .2s ease-in;
-     }
+}
 
 .button-navbar {
     padding-left: 2rem;
@@ -223,18 +219,10 @@ font-weight: 800;
 }
 
 .button-navbar:hover {
-    transform: none;
     text-decoration: none;
-    background-color: var(--color-bg);
-    color: var(--color-text-light);
-    transition: color 0.5s ease;
-}
-
-.navbar__menu.active .navbar__item:hover {
-    background-color: transparent;
-    transform: scale(1.1);
-    transition: .3s ease;
-    text-decoration: none;
+    transform: scale(1.1) translateY(-3px);
+    border: 2px solid transparent;
+    transition: .3s ease-in;
 }
 
 /*typewriter animation*/
@@ -391,8 +379,22 @@ font-weight: 800;
         display: flex;
     }
 
-    .button-navbar {
+    .navbar__menu.active .button-navbar {
         border: none;
+    }
+
+    .navbar__menu.active .navbar__item:hover {
+        text-decoration: none;
+        transform: scale(1.1);
+    }
+
+    .navbar__menu.active .button-navbar:hover {
+        text-decoration: none;
+        transform: scale(1.1);
+        border-color: transparent;
+        background-color: none;
+        transition-delay: 0s;
+        color: var(--color-text-light);
     }
 }
 
