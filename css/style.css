@@ -2,7 +2,7 @@
     --color-text: #0A1522;
     --color-text-light: #00B3CC;
     --color-bg: #ffffff;
-    --colog-bg-light: #D7ECEF;
+    --color-bg-light: #D7ECEF;
     --color-strong: #FFC859;
     --font-primary: "Rubik", sans-serif;
     --font-heading: "Poppins", sans-serif;
@@ -81,32 +81,39 @@ h2 {
     text-align: center;
 }
 
-.hero__title {
-    text-align: left;
+
+
+
+
+
+
+/*------------------------------------*\
+  #BUTTON
+\*------------------------------------*/
+
+.button {
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 9999px;
+    border: 2px solid var(--color-bg);
+    padding: .5em 1.4rem;
 }
 
-.hero__title--typewriter {
-    display: inline-block;
-    text-align: left;
+.button-primary {
+    font-weight: 800;
+    margin-right: .5rem;
+    color: var(--color-text);
+    background-color: var(--color-text-light);
+    border: none;
+}
+
+.button-secondary {
+    font-weight: 400;
+    margin-left: .5rem;
     color: var(--color-text-light);
-    font-size: clamp(1.5rem, 3vw, 3rem);
-    font-weight: 200;
-    padding: 0.2rem 0 0.3rem 0;
-    cursor: pointer;
-    border-right: 2.32px solid;
-    animation: typewriter 10s steps(15) normal infinite, blinkTextCursor 1s step-end infinite;
-    white-space: nowrap;
-    overflow: hidden;
-
+    border: 2px solid var(--color-text-light);
 }
 
-.hero__text {
-    color: var(--color-bg);
-    font-weight: 200;
-    line-height: 1.2rem;
-    padding: 3rem 3rem 4rem 3rem;
-    font-size: clamp(1.25rem, 4.5vw, 1, 75rem);
-}
 
 
 
@@ -145,6 +152,10 @@ h2 {
     padding: 0;
 }
 
+.navbar__menu.active {
+  display: block;
+}
+
 .navbar__item {
     display: block;
     text-align: center;
@@ -158,45 +169,45 @@ h2 {
     padding: .5rem 1.4rem;
 }
 
+/*typewriter animation*/
 
+@keyframes typewriter {
+    0% {
+        max-width: 0%;
+    }
 
+    15% {
+        max-width: 100%
+    }
 
-/*------------------------------------*\
-  #BUTTON
-\*------------------------------------*/
+    85% {
+        max-width: 100%
+    }
 
-.button {
-    text-decoration: none;
-    text-transform: uppercase;
-    border-radius: 9999px;
-    border: 2px solid var(--color-bg);
-    padding: .5em 1.4rem;
+    85.05% {
+        max-width: 0%;
+    }
+
+    100% {
+        max-width: 0%;
+    }
 }
 
-.button-primary {
-    font-weight: 800;
-    margin-right: .5rem;
-    color: var(--color-text);
-    background-color: var(--color-text-light);
-    border: none;
-    font-weight: ;
+@keyframes blinkTextCursor {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: var(--color-text-light);
+    }
 }
-
-.button-secondary {
-    font-weight: 400;
-    margin-left: .5rem;
-    color: var(--color-text-light);
-    border: 2px solid var(--color-text-light);
-}
-
-
-/*------------------------------------*\
-  #HAMBURGER BUTTON & ANIMATION
-\*------------------------------------*/
 
 /*HAMBURGER BUTTON*/
 
-._navbar__hamburger {
+.navbar__hamburger {
     position: absolute;
     top: 2.4rem;
     right: 2.4rem;
@@ -257,57 +268,76 @@ h2 {
     transform: translateY(-6.5px) rotate(-45deg);
 }
 
+@keyframes openmenu {
+
+0% {
+  transform: scaleY(0);
+}
+80% {
+  transform: scaleY(1.1);
+}
+100% {
+  transform: scaleY(1);
+}
+
+}
+
+
 /***/
+
 
 @media (max-width: 1080px) {
 
-    .navbar__hamburger {
-        display: flex;
-        border-radius: 9px;
-    }
-
-    .navbar__menu {
-        width: 100%;
-        display: none;
-        animation: openmenu .3s;
-        white-space: nowrap;
-        overflow: hidden;
-        transform-origin: top center;
-    }
-
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .navbar__menu ul {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .navbar__item {
-        padding: .3rem 0rem;
-    }
-
-
-
-    @keyframes openmenu {
-
-        0% {
-            transform: scaleY(0)
-        }
-
-        80% {
-            transform: scaleY(1.05)
-        }
-
-        100% {
-            transform: scaleY(1)
-        }
-
-    }
-
+.navbar__hamburger {
+  display: flex;
+  border-radius: 9px;
 }
+
+.navbar__menu {
+  width: 100%;
+  display: none;
+  animation: openmenu .3s;
+  white-space: nowrap;
+  overflow: hidden; 
+  transform-origin: top center;
+}
+
+.navbar {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.navbar__menu ul {
+  flex-direction: column;
+  width: 100%;
+}
+
+.navbar__item {
+  padding: .3rem 0rem;
+}
+
+.navbar__item.active {
+  display: flex;
+}
+
+.button-navbar {
+    border: none;
+}
+}
+
+@media (max-width: 380px) {
+
+.navbar__logo {
+    max-width: 55vw;
+    margin-left: .15rem;
+}
+}
+
+
+
+
+
+
 
 
 
@@ -328,11 +358,57 @@ h2 {
 }
 
 .hero-content {
-    padding: 10rem 3rem 5rem 3rem;
+    padding: 9rem 3rem 5.5rem 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+}
+
+.hero__title {
+    text-align: left;
+}
+
+.hero__title--typewriter {
+    display: inline-block;
+    text-align: left;
+    color: var(--color-text-light);
+    font-size: clamp(1.5rem, 3vw, 3rem);
+    font-weight: 200;
+    padding: 0.2rem 0 0.3rem 0;
+    cursor: pointer;
+    border-right: 2.32px solid;
+    animation: typewriter 10s steps(15) normal infinite, blinkTextCursor 1s step-end infinite;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.hero__text {
+    color: var(--color-bg);
+    text-align: center;
+    font-weight: 200;
+    line-height: 1.5;
+    padding: 3rem 3rem 4rem 3rem;
+    font-size: clamp(1rem, 2.5vw, 1.3rem);
+}
+
+@media (max-width: 1080px) {
+    .hero-content {
+        padding: 6rem 1.5rem 5rem 1.5rem;
+    }
+}
+
+@media (max-width: 380px) {
+
+.button-secondary {
+    display: none;
+}
+
+.hero-content {
+    padding: 4rem .2rem 4.5rem .2rem;
+}
+
+
 }
 
 
@@ -341,38 +417,17 @@ h2 {
 \*------------------------------------*/
 
 
-/*typewriter animation*/
 
-@keyframes typewriter {
-    0% {
-        max-width: 0%;
-    }
 
-    15% {
-        max-width: 100%
-    }
 
-    85% {
-        max-width: 100%
-    }
 
-    85.05% {
-        max-width: 0%;
-    }
 
-    100% {
-        max-width: 0%;
-    }
-}
 
-@keyframes blinkTextCursor {
 
-    from,
-    to {
-        border-color: transparent;
-    }
+/*------------------------------------*\
+  #POPUP
+\*------------------------------------*/
 
-    50% {
-        border-color: var(--color-text-light);
-    }
+.popup__box {
+  display: inline;
 }
