@@ -100,7 +100,6 @@ h2 {
     border: 2px solid var(--color-bg);
     padding: .4rem 2.3rem;
     line-height: normal;
-    transition: 0.3s ease-in;
 }
 
 .button-primary {
@@ -115,7 +114,7 @@ h2 {
     background-color: transparent;
     color: var(--color-text-light);
     transform: scale(1.15);
-
+    transition: 0.5s ease-in;
 }
 
 .button-secondary {
@@ -128,8 +127,8 @@ h2 {
 .button-secondary:hover {
     border: 2px solid transparent;
     transform: scale(1.15);
+    transition: 0.3s ease-in;
 }
-
 
 @media (max-width: 1024px) {
     .button {
@@ -214,8 +213,8 @@ h2 {
 }
 
 .button-navbar {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding: .3rem 2rem;
+    margin-top: -.15rem;
 }
 
 .button-navbar:hover {
@@ -410,11 +409,6 @@ h2 {
 
     .navbar__item {
         padding: .2rem 2.3rem;
-    }
-
-    .button-navbar {
-        padding: .2rem 2rem;
-        margin: 0 .5rem 0 .5rem;
     }
 }
 
