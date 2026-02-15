@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aloldal címe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR ide jön (meglévő) -->
+
+    <main class="page">
+
+        <header class="page-header">
+            <h1 class="page-title">Főcím</h1>
+            <p class="page-subtitle">Alcím / rövid bevezető szöveg</p>
+        </header>
+
+        <section class="page-content">
+
+            <h2>Alcím 1</h2>
+            <p></p>
+
+            <p></p>
+
+            <h2>Alcím 2</h2>
+            <p></p>
+
+            <h3>Kiemelt alcím</h3>
+            <p></p>
+
+            <p></p>
+
+            <h2>Alcím 3</h2>
+            <p></p>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER ide jön (ha van) -->
+
+</body>
+</html>

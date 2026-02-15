@@ -256,8 +256,6 @@ h2 {
 .navbar__menu {
     display: none;
     width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
     transform-origin: top center;
     padding-top: 2rem;
 }
@@ -295,7 +293,6 @@ h2 {
 .button-navbar {
     transition: transform .3s ease-in, border .3s ease-in-out;
     border: 2px solid transparent;
-    margin-bottom: -.6rem;
     font-weight: 400;
     padding: .3rem 1.4rem;
 }
@@ -314,7 +311,7 @@ h2 {
     .navbar {
         max-width: 1440px;
         display: flex;
-        width: 100%;
+        width: auto;
         margin: 0 auto;
         flex-direction: row;
         justify-content: space-between;
@@ -333,10 +330,10 @@ h2 {
 
     .navbar__menu {
         display: flex;
-        align-self: center;
-        padding: 1rem;
+        overflow: visible;
+        white-space: normal;
+        padding: 0;
     }
-
 
     .navbar__menu ul {
         display: flex;
@@ -352,12 +349,11 @@ h2 {
 
     .button-navbar {
         border: 2px solid var(--color-bg);
-        margin-top: -.5rem;
     }
 
     .button-navbar:hover {
         transform: scale(1.05);
-        border-color:transparent;
+        border-color: transparent;
         color: var(--color-bg-light);
     }
 
@@ -380,17 +376,13 @@ h2 {
         border-bottom: 10px solid var(--color-text-light);
         top: 100%;
         left: 50%;
-        transform: translate(-50%) scaleX(0%);
+        transform: translate(-50%) scaleX(0);
         transition: transform .5s ease;
     }
 
     .navbar__item:hover::before {
         transform: translate(-50%) scaleX(100%);
     }
-
-
-
-
 }
 
 

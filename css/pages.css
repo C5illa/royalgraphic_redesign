@@ -1,0 +1,83 @@
+/*------------------------------------*\
+  #PAGE LAYOUT
+\*------------------------------------*/
+
+.page {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem 6rem;
+}
+
+
+/*------------------------------------*\
+  #PAGE HEADER
+\*------------------------------------*/
+
+.page-header {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.page-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-weight: 800;
+    color: var(--color-text);
+    margin-bottom: 1rem;
+}
+
+.page-subtitle {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: var(--color-text-light);
+    max-width: 720px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+
+/*------------------------------------*\
+  #PAGE CONTENT
+\*------------------------------------*/
+
+.page-content {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--color-text);
+}
+
+.page-content p {
+    margin-bottom: 1.4rem;
+    max-width: 75ch;
+}
+
+.page-content h2 {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 3rem 0 1rem;
+    color: var(--color-text);
+}
+
+.page-content h3 {
+    font-family: var(--font-heading);
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin: 2rem 0 0.8rem;
+    color: var(--color-text-light);
+}
+
+
+/*------------------------------------*\
+  #RESPONSIVE
+\*------------------------------------*/
+
+@media (max-width: 768px) {
+    .page {
+        padding: 3rem 1.2rem 4rem;
+    }
+
+    .page-subtitle {
+        font-size: 1rem;
+    }
+}
