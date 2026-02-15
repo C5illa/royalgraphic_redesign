@@ -90,8 +90,6 @@ h2 {
 
 
 
-
-
 /*------------------------------------*\
   #BUTTON
 \*------------------------------------*/
@@ -126,12 +124,12 @@ h2 {
     font-weight: 400;
     margin-left: .5rem;
     color: var(--color-text-light);
-    border: 2px solid var(--color-text-light);
+    border-color: var(--color-text-light);
     transition: transform .4s ease-in-out, border .5s ease-in-out;
 }
 
 .button-secondary:hover {
-    border: 2px solid transparent;
+    border-color: transparent;
     transform: scale(1.15);
 }
 
@@ -298,6 +296,8 @@ h2 {
     transition: transform .3s ease-in, border .3s ease-in-out;
     border: 2px solid transparent;
     margin-bottom: -.6rem;
+    font-weight: 400;
+    padding: .3rem 1.4rem;
 }
 
 .navbar__menu.active {
@@ -350,17 +350,14 @@ h2 {
         font-size: .9rem;
     }
 
-
-
     .button-navbar {
         border: 2px solid var(--color-bg);
-        margin-top: -.4rem;
-        padding: .3rem 1.7rem;
+        margin-top: -.5rem;
     }
 
     .button-navbar:hover {
         transform: scale(1.05);
-        border: 2px solid transparent;
+        border-color:transparent;
         color: var(--color-bg-light);
     }
 
@@ -403,8 +400,11 @@ h2 {
 @media (min-width: 1440px) {
 
     .navbar__item {
-        padding: .3rem 2.3rem;
+        padding-left: 2.3rem;
+        padding-right: 2.3rem;
+        font-size: 1rem;
     }
+
 }
 
 @media (max-width: 380px) {
@@ -505,19 +505,13 @@ h2 {
     text-align: center;
     font-weight: 200;
     line-height: 1.5;
-    padding: 3rem 3rem 4rem 3rem;
+    padding: 4rem;
     font-size: clamp(1rem, 2.5vw, 1.3rem);
 }
 
 
 
 
-
-@media (min-width: 1024px) {
-    .hero-content {
-        padding-top: 8rem;
-    }
-}
 
 @media (max-width: 768px) {
 
@@ -534,9 +528,15 @@ h2 {
     }
 }
 
+@media (min-width: 1024px) {
+    .hero-content {
+        padding-top: 8rem;
+    }
+}
+
 @media (min-width: 1440px) {
 
-    .hero__content {
+    .hero-content {
         padding-top: 10rem;
         padding-bottom: 4rem;
     }
