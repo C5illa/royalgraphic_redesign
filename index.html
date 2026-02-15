@@ -19,417 +19,422 @@
 </head>
 
 <body>
-    <div class="site-header">
-    <header>
+    <div id="top" class="site-header">
+        <header>
 
-        <nav class="navbar">
+            <nav class="navbar">
 
-            <div>
-                <img class="navbar__logo" src="assets/logo_white.svg" alt="Royal Graphic logo">
+                <div>
+                    <img class="navbar__logo" src="assets/logo_white.svg" alt="Royal Graphic logo">
+                </div>
+
+                <a href="#" class="navbar__hamburger" aria-label="Menü megnyitása">
+                    <span class="bar1"></span>
+                    <span class="bar2"></span>
+                    <span class="bar3"></span>
+                </a>
+
+                <div class="navbar__menu">
+                    <ul>
+                        <li><a class="navbar__item" href="#services">Szolgáltatások</a></li>
+                        <li><a class="navbar__item" href="#price">Árak</a></li>
+                        <li><a class="navbar__item" href="#order">Megrendelés</a></li>
+                        <li><a class="navbar__item" href="#portfolio">Portfólió</a></li>
+                        <li><a class="button button-navbar" href="#contact">Kapcsolat</a></li>
+                        <li><a class="navbar__item" href="/blog.html">Blog</a></li>
+                    </ul>
+                </div>
+
+            </nav>
+
+        </header>
+
+
+
+
+
+        <main>
+
+            <section class="hero">
+                <div class="hero-content">
+                    <h1>Grafikai tervezés</h1>
+                    <div class="hero__title">
+                        <p class="hero__title--typewriter"> ötletből design</p>
+                    </div>
+                    <p class="hero__text">Működő, letisztult vizuális megjelenést alkotok, hogy ötleted ne csak
+                        elképzelés maradjon.
+                        <br>Arculat, webdesign és egyedi kreatív munkák.
+                    </p>
+                    <div class="hero__button">
+                        <a class="button button-primary" href="#contact">Kapcsolat</a>
+                        <a class="button button-secondary" href="#about">Rólam</a>
+                    </div>
+                </div>
+
+            </section>
+    </div>
+
+
+
+
+    <section id="services" class="services">
+        <h2 class="section__title">Mit kínálok?</h2>
+        <h3 class="section__subtitle">Grafikai és vizuális megoldásokat készítek, melyek ötleteidből valós,
+            működő megjelenéseket formálnak.</h3>
+
+        <div class="services__items">
+
+            <div class="services__item">
+                <div class="card__icon"><img src="assets/graphic_icon.svg" alt="grafikai tervezés">
+                </div>
+                <h3 class="services__item-title">Grafikai tervezés</h3>
+                <h4 class="services__item-subtitle">Vizuális megoldások,
+                    amelyek karaktert adnak márkádnak</h4>
+                <p class="services__item-text">A grafikai tervezés márkád alapja. Olyan anyagokat tervezek,
+                    amelyek nemcsak esztétikusak, hanem üzenetet hordoznak és hosszú távon is működnek.
+                    Logótervezés, arculati elemek, digitális és nyomtatott grafika, webdesign - minden, ami
+                    segít, hogy a márkád felismerhető és emlékezetes legyen.</p>
+                <a class="button services__button" href="#contact">Beszéljünk róla <img src="assets/btn_arrow.svg"
+                        alt="Jobbra nyíl" class="button__arrow">
+                </a>
             </div>
 
-            <a href="#" class="navbar__hamburger" aria-label="Menü megnyitása">
-                <span class="bar1"></span>
-                <span class="bar2"></span>
-                <span class="bar3"></span>
-            </a>
+            <div class="services__item">
+                <div class="card__icon"><img src="assets/promotion_icon.svg" alt="reklámdekoráció">
+                </div>
+                <h3 class="services__item-title">Reklámdekoráció</h3>
+                <h4 class="services__item-subtitle">Reklámdekoráció, logózott céges termékek,
+                    melyek képviselik vállalkozásod</h4>
+                <p class="services__item-text">Reklámdekoráció, logózott céges termékek, promóciós eszközök
+                    grafikai tervezése a koncepciótól a kész megoldásig.
+                    A hangsúly az egységes megjelenésen és az átgondolt vizuális kommunikáción van – hogy
+                    márkád
+                    minden felületen következetesen jelenjen meg.</p>
+                <a class="button services__button" href="#contact">Ajánlatot kérek <img src="assets/btn_arrow.svg"
+                        alt="Jobbra nyíl" class="button__arrow">
+                </a>
+            </div>
 
-            <div class="navbar__menu">
-                <ul>
-                    <li><a class="navbar__item" href="#services">Szolgáltatások</a></li>
-                    <li><a class="navbar__item" href="#price">Árak</a></li>
-                    <li><a class="navbar__item" href="#order">Megrendelés</a></li>
-                    <li><a class="navbar__item" href="#portfolio">Portfólió</a></li>
-                    <li><a class="button button-navbar" href="#contact">Kapcsolat</a></li>
-                    <li><a class="navbar__item" href="/blog.html">Blog</a></li>
+            <div class="services__item">
+                <div class="card__icon"><img src="assets/gift_icon.svg" alt="reklámdekoráció"></div>
+                <h3 class="services__item-title">Egyedi ajándéktárgyak</h3>
+                <h4 class="services__item-subtitle">Személyre szabott, kreatív termékek
+                    promóciós vagy privát célra</h4>
+                <p class="services__item-text">Személyre szabott, egyedi ajándéktárgyak, prémium minőségű
+                    fényképes ajándékok, melyek minden alkalomra tökéletesek és maradandó emléket adnak.
+                    Ideális választás egyedi céges ajándéknak vagy különleges alkalmakra, ahol a részletek
+                    számítanak.</p>
+                <a class="button services__button" href="/termekek.html">Termékkatalógus <img src="assets/btn_arrow.svg"
+                        alt="Jobbra nyíl" class="button__arrow">
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+    <section id="price" class="price">
+        <h2 class="section__title">Személyre szabott árazás</h2>
+        <h3 class="section__subtitle">A projekt költsége minden esetben annak jellegéhez és összetettségéhez
+            igazodik, hogy testre szabott megoldást kínálhassak.</h3>
+
+        <div class="price__cards">
+
+            <div class="price__card price__card-1">
+                <h3 class="card__title">Átlátható árazás</h3>
+                <ul class="card__list">
+                    <li class="card__list-item">
+                        <span class="card__list-icon">
+                            <svg class="checkmark-icon" viewBox="38.7 41.1 203.2 180.9">
+                                <path
+                                    d="m95.4 222-82.6-82.6c-2.3-2.3-2.3-6.1 0-8.5L38.7 105c2.3-2.3 6.1-2.3 8.5 0l52.5 52.5L215.9 41.1c2.3-2.3 6.1-2.3 8.4 0l26 25.9c2.3 2.3 2.3 6.1 0 8.5L103.8 222c-2.3 2.3-6.1 2.3-8.4 0" />
+                            </svg>
+                        </span> Személyre szabott projektárak
+                    </li>
+                    <li class="card__list-item">
+                        <span class="card__list-icon">
+                            <svg class="checkmark-icon" viewBox="38.7 41.1 203.2 180.9">
+                                <path
+                                    d="m95.4 222-82.6-82.6c-2.3-2.3-2.3-6.1 0-8.5L38.7 105c2.3-2.3 6.1-2.3 8.5 0l52.5 52.5L215.9 41.1c2.3-2.3 6.1-2.3 8.4 0l26 25.9c2.3 2.3 2.3 6.1 0 8.5L103.8 222c-2.3 2.3-6.1 2.3-8.4 0" />
+                            </svg>
+                        </span> Ráfordított munkával arányos díjazás
+                    </li>
+                    <li class="card__list-item">
+                        <span class="card__list-icon">
+                            <svg class="checkmark-icon" viewBox="38.7 41.1 203.2 180.9">
+                                <path
+                                    d="m95.4 222-82.6-82.6c-2.3-2.3-2.3-6.1 0-8.5L38.7 105c2.3-2.3 6.1-2.3 8.5 0l52.5 52.5L215.9 41.1c2.3-2.3 6.1-2.3 8.4 0l26 25.9c2.3 2.3 2.3 6.1 0 8.5L103.8 222c-2.3 2.3-6.1 2.3-8.4 0" />
+                            </svg>
+                        </span> A konzultáció a tervezési folyamat része
+                    </li>
+                    <li class="card__list-item">
+                        <span class="card__list-icon">
+                            <svg class="checkmark-icon" viewBox="38.7 41.1 203.2 180.9">
+                                <path
+                                    d="m95.4 222-82.6-82.6c-2.3-2.3-2.3-6.1 0-8.5L38.7 105c2.3-2.3 6.1-2.3 8.5 0l52.5 52.5L215.9 41.1c2.3-2.3 6.1-2.3 8.4 0l26 25.9c2.3 2.3 2.3 6.1 0 8.5L103.8 222c-2.3 2.3-6.1 2.3-8.4 0" />
+                            </svg>
+                        </span> Rugalmas együttműködés
+                    </li>
+                    <li class="card__list-item">
+                        <span class="card__list-icon">
+                            <svg class="checkmark-icon" viewBox="38.7 41.1 203.2 180.9">
+                                <path
+                                    d="m95.4 222-82.6-82.6c-2.3-2.3-2.3-6.1 0-8.5L38.7 105c2.3-2.3 6.1-2.3 8.5 0l52.5 52.5L215.9 41.1c2.3-2.3 6.1-2.3 8.4 0l26 25.9c2.3 2.3 2.3 6.1 0 8.5L103.8 222c-2.3 2.3-6.1 2.3-8.4 0" />
+                            </svg>
+                        </span> Nincsenek utólag felmerülő rejtett költségek
+                    </li>
                 </ul>
             </div>
 
-        </nav>
-
-    </header>
-
-
-
-
-
-    <main>
-
-        <section id="top" class="hero">
-            <div class="hero-content">
-                <h1>Grafikai tervezés</h1>
-                <div class="hero__title"><p class="hero__title--typewriter"> ötletből design</p></div>
-                <p class="hero__text">Működő, letisztult vizuális megjelenést alkotok, hogy ötleted ne csak elképzelés maradjon.
-                    <br>Arculat, webdesign és egyedi kreatív munkák.</p>
-                <div class="hero__button">
-                    <a class="button button-primary" href="#contact">Kapcsolat</a>
-                    <a class="button button-secondary" href="#about">Rólam</a>
-                </div>
+            <div class="price__card price__card-2">
+                <h3 class="card__title">Grafikai tervezés általános óradíja</h3>
+                <div class="card__icon"><img src="assets/price_icon.svg" alt="árak"></div>
+                <p class="card__price">8 000 Ft <span class="card__text--small">/ óra</span></p>
+                <p class="card__text">(alanyi adómentes szolgáltatás)</p>
             </div>
 
-        </section>
-</div>
-
-
-
-
-        <section id="services" class="services">
-            <h2 class="section__title">Mit kínálok?</h2>
-            <h3 class="section__subtitle">Grafikai és vizuális megoldásokat készítek, melyek ötleteidből valós,
-                működő megjelenéseket formálnak.</h3>
-
-            <div class="services__items">
-
-                <div class="services__item">
-                    <div class="card__icon"><img src="assets/graphic_icon.svg" alt="grafikai tervezés">
-                    </div>
-                    <h3 class="services__item-title">Grafikai tervezés</h3>
-                    <h4 class="services__item-subtitle">Vizuális megoldások,
-                        amelyek karaktert adnak márkádnak</h4>
-                    <p class="services__item-text">A grafikai tervezés márkád alapja. Olyan anyagokat tervezek,
-                        amelyek nemcsak esztétikusak, hanem üzenetet hordoznak és hosszú távon is működnek.
-                        Logótervezés, arculati elemek, digitális és nyomtatott grafika, webdesign - minden, ami
-                        segít, hogy a márkád felismerhető és emlékezetes legyen.</p>
-                    <a class="button services__button" href="#contact">Beszéljünk róla <img src="assets/btn_arrow.svg"
-                            alt="Jobbra nyíl" class="button__arrow">
-                    </a>
-                </div>
-
-                <div class="services__item">
-                    <div class="card__icon"><img src="assets/promotion_icon.svg" alt="reklámdekoráció">
-                    </div>
-                    <h3 class="services__item-title">Reklámdekoráció</h3>
-                    <h4 class="services__item-subtitle">Reklámdekoráció, logózott céges termékek,
-                        melyek képviselik vállalkozásod</h4>
-                    <p class="services__item-text">Reklámdekoráció, logózott céges termékek, promóciós eszközök
-                        grafikai tervezése a koncepciótól a kész megoldásig.
-                        A hangsúly az egységes megjelenésen és az átgondolt vizuális kommunikáción van – hogy
-                        márkád
-                        minden felületen következetesen jelenjen meg.</p>
-                    <a class="button services__button" href="#contact">Ajánlatot kérek <img src="assets/btn_arrow.svg"
-                            alt="Jobbra nyíl" class="button__arrow">
-                    </a>
-                </div>
-
-                <div class="services__item">
-                    <div class="card__icon"><img src="assets/gift_icon.svg" alt="reklámdekoráció"></div>
-                    <h3 class="services__item-title">Egyedi ajándéktárgyak</h3>
-                    <h4 class="services__item-subtitle">Személyre szabott, kreatív termékek
-                        promóciós vagy privát célra</h4>
-                    <p class="services__item-text">Személyre szabott, egyedi ajándéktárgyak, prémium minőségű
-                        fényképes ajándékok, melyek minden alkalomra tökéletesek és maradandó emléket adnak.
-                        Ideális választás egyedi céges ajándéknak vagy különleges alkalmakra, ahol a részletek
-                        számítanak.</p>
-                    <a class="button services__button" href="/termekek.html">Termékkatalógus <img
-                            src="assets/btn_arrow.svg" alt="Jobbra nyíl" class="button__arrow">
-                    </a>
-                </div>
-
-            </div>
-        </section>
-
-
-
-
-
-        <section id="price" class="price">
-            <h2 class="section__title">Személyre szabott árazás</h2>
-            <h3 class="section__subtitle">A projekt költsége minden esetben annak jellegéhez és összetettségéhez
-                igazodik, hogy testre szabott megoldást kínálhassak.</h3>
-
-            <div class="price__cards">
-
-                <div class="price__card price__card-1">
-                    <h3 class="card__title">Átlátható árazás</h3>
-                    <ul class="card__list">
-                        <li class="card__list-item">
-                            <span class="card__list-icon checkmark-icon">
-                                <svg>
-                                    <path
-                                        d="m95.4 222-82.6-82.6c-2.3-2.3-2.3-6.1 0-8.5L38.7 105c2.3-2.3 6.1-2.3 8.5 0l52.5 52.5L215.9 41.1c2.3-2.3 6.1-2.3 8.4 0l26 25.9c2.3 2.3 2.3 6.1 0 8.5L103.8 222c-2.3 2.3-6.1 2.3-8.4 0" />
-                                </svg>
-                            </span> Személyre szabott projektárak
-                        </li>
-                        <li class="card__list-item">
-                            <span class="card__list-icon checkmark-icon">
-                                <svg>
-                                    <path
-                                        d="m95.4 222-82.6-82.6c-2.3-2.3-2.3-6.1 0-8.5L38.7 105c2.3-2.3 6.1-2.3 8.5 0l52.5 52.5L215.9 41.1c2.3-2.3 6.1-2.3 8.4 0l26 25.9c2.3 2.3 2.3 6.1 0 8.5L103.8 222c-2.3 2.3-6.1 2.3-8.4 0" />
-                                </svg>
-                            </span> Ráfordított munkával arányos díjazás
-                        </li>
-                        <li class="card__list-item">
-                            <span class="card__list-icon checkmark-icon">
-                                <svg>
-                                    <path
-                                        d="m95.4 222-82.6-82.6c-2.3-2.3-2.3-6.1 0-8.5L38.7 105c2.3-2.3 6.1-2.3 8.5 0l52.5 52.5L215.9 41.1c2.3-2.3 6.1-2.3 8.4 0l26 25.9c2.3 2.3 2.3 6.1 0 8.5L103.8 222c-2.3 2.3-6.1 2.3-8.4 0" />
-                                </svg>
-                            </span> A konzultáció a tervezési folyamat része
-                        </li>
-                        <li class="card__list-item">
-                            <span class="card__list-icon checkmark-icon"><svg>
-                                    <path
-                                        d="m95.4 222-82.6-82.6c-2.3-2.3-2.3-6.1 0-8.5L38.7 105c2.3-2.3 6.1-2.3 8.5 0l52.5 52.5L215.9 41.1c2.3-2.3 6.1-2.3 8.4 0l26 25.9c2.3 2.3 2.3 6.1 0 8.5L103.8 222c-2.3 2.3-6.1 2.3-8.4 0" />
-                                </svg>
-                            </span> Rugalmas együttműködés
-                        </li>
-                        <li class="card__list-item">
-                            <span class="card__list-icon checkmark-icon"><svg>
-                                    <path
-                                        d="m95.4 222-82.6-82.6c-2.3-2.3-2.3-6.1 0-8.5L38.7 105c2.3-2.3 6.1-2.3 8.5 0l52.5 52.5L215.9 41.1c2.3-2.3 6.1-2.3 8.4 0l26 25.9c2.3 2.3 2.3 6.1 0 8.5L103.8 222c-2.3 2.3-6.1 2.3-8.4 0" />
-                                </svg>
-                            </span> Nincsenek utólag felmerülő rejtett költségek
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="price__card price__card-2">
-                    <h3 class="card__title">Grafikai tervezés általános óradíja</h3>
-                    <div class="card__icon"><img src="assets/price_icon.svg" alt="árak"></div>
-                    <p class="card__price">8 000 Ft <span class="card__text--small">/ óra</span></p>
-                    <p class="card__text">(alanyi adómentes szolgáltatás)</p>
-                </div>
-
-                <div class="price__card price__card-3">
-                    <h3 class="card__title">Néhány tájékoztató jellegű ár</h3>
-                    <ul class="card__list">
-                        <li class="card__list-item">Logótervezés
-                            <span class="card__list-price">39 000 Ft-tól</span>
-                        </li>
-                        <li class="card__list-item">Névjegykártya tervezés
-                            <span class="card__list-price">6 000
-                                Ft-tól</span>
-                        </li>
-                        <li class="card__list-item">Szórólap tervezés
-                            <span class="card__list-price">15 000
-                                Ft-tól</span>
-                        </li>
-                        <li class="card__list-item">Vektorizálás
-                            <span class="card__list-price">10 000 Ft-tól</span>
-                        </li>
-                        <li class="card__list-item">Webdesign
-                            <span class="card__list-price">89 000 Ft-tól</span>
-                        </li>
-                    </ul>
-                    <a href="#" class="button price__card-button">Ajándéktárgy katalógus</a>
-                </div>
-
+            <div class="price__card price__card-3">
+                <h3 class="card__title">Néhány tájékoztató jellegű ár</h3>
+                <ul class="card__list">
+                    <li class="card__list-item">Logótervezés
+                        <span class="card__list-price">39 000 Ft-tól</span>
+                    </li>
+                    <li class="card__list-item">Névjegykártya tervezés
+                        <span class="card__list-price">6 000
+                            Ft-tól</span>
+                    </li>
+                    <li class="card__list-item">Szórólap tervezés
+                        <span class="card__list-price">15 000
+                            Ft-tól</span>
+                    </li>
+                    <li class="card__list-item">Vektorizálás
+                        <span class="card__list-price">10 000 Ft-tól</span>
+                    </li>
+                    <li class="card__list-item">Webdesign
+                        <span class="card__list-price">89 000 Ft-tól</span>
+                    </li>
+                </ul>
+                <a href="#" class="button price__card-button">Ajándéktárgy katalógus</a>
             </div>
 
-            <p class="price__note">A feltüntetett árak tájékoztató jellegűek, a pontos díj minden esetben a
-                projekt alapján kerül meghatározásra!</p>
-            <a href="#contact" class="button button-secondary">Ajánlatot kérek</a>
-        </section>
+        </div>
+
+        <p class="price__note">A feltüntetett árak tájékoztató jellegűek, a pontos díj minden esetben a
+            projekt alapján kerül meghatározásra!</p>
+        <a href="#contact" class="button button-secondary">Ajánlatot kérek</a>
+    </section>
 
 
 
 
 
-        <section id="about" class="about">
-            <h2 class="section__title">Ki vagyok én?</h2>
-            <h3 class="section__subtitle">Grafikusként abban hiszek, hogy a design akkor válik igazán értékessé, ha
-                a gyakorlatban is működik.</h3>
+    <section id="about" class="about">
+        <h2 class="section__title">Ki vagyok én?</h2>
+        <h3 class="section__subtitle">Grafikusként abban hiszek, hogy a design akkor válik igazán értékessé, ha
+            a gyakorlatban is működik.</h3>
 
-            <div class="about__article">
+        <div class="about__article">
 
-                <div class="about__image">
-                    <img src="assets/profile_pic.png" alt="Szabó Csilla grafikus">
-                </div>
-
-                <div class="about__text">
-                    <p>
-                        A kreatív vizuális megoldásokat marketing- és üzleti szemlélettel ötvözöm. Hiszem, hogy a jó
-                        design nemcsak esztétikus, hanem célt is szolgál: üzenetet közvetít, támogatja a márkát és
-                        valódi értéket teremt.
-                        Minden projektet az adott célokhoz és igényekhez igazítok, legyen szó grafikai tervezésről,
-                        webes megjelenésről vagy egyedi vizuális megoldásokról. Webdesign munkáknál különösen fontos
-                        számomra a felhasználóbarát, reszponzív szemlélet, hogy a végeredmény ne csak látványos,
-                        hanem hosszú távon is jól használható is legyen.
-                    </p>
-                </div>
+            <div class="about__image">
+                <img class="profile-picture" src="assets/profile_pic.png" alt="Szabó Csilla grafikus">
             </div>
 
-            <h4>Miért dolgozz velem</h4>
+            <div class="about__text">
+                <p>
+                    A kreatív vizuális megoldásokat marketing- és üzleti szemlélettel ötvözöm. Hiszem, hogy a jó
+                    design nemcsak esztétikus, hanem célt is szolgál: üzenetet közvetít, támogatja a márkát és
+                    valódi értéket teremt.
+                    Minden projektet az adott célokhoz és igényekhez igazítok, legyen szó grafikai tervezésről,
+                    webes megjelenésről vagy egyedi vizuális megoldásokról. Webdesign munkáknál különösen fontos
+                    számomra a felhasználóbarát, reszponzív szemlélet, hogy a végeredmény ne csak látványos,
+                    hanem hosszú távon is jól használható is legyen.
+                </p>
+            </div>
+        </div>
 
-            <ul class="about__list">
-                <li class="about__list-item">
-                    <span class="about__list-icon checkmark-icon">
-                        <svg>
-                            <path
-                                d="m95.4 222-82.6-82.6c-2.3-2.3-2.3-6.1 0-8.5L38.7 105c2.3-2.3 6.1-2.3 8.5 0l52.5 52.5L215.9 41.1c2.3-2.3 6.1-2.3 8.4 0l26 25.9c2.3 2.3 2.3 6.1 0 8.5L103.8 222c-2.3 2.3-6.1 2.3-8.4 0" />
-                        </svg>
-                    </span> Letisztult vizuális szemlélet
-                </li>
+        <h4>Miért dolgozz velem</h4>
 
-                <li class="about__list-item">
-                    <span class="about__list-icon checkmark-icon">
-                        <svg>
-                            <path
-                                d="m95.4 222-82.6-82.6c-2.3-2.3-2.3-6.1 0-8.5L38.7 105c2.3-2.3 6.1-2.3 8.5 0l52.5 52.5L215.9 41.1c2.3-2.3 6.1-2.3 8.4 0l26 25.9c2.3 2.3 2.3 6.1 0 8.5L103.8 222c-2.3 2.3-6.1 2.3-8.4 0" />
-                        </svg>
-                    </span> Technikailag átgondolt tervezés
-                </li>
+        <ul class="about__list">
+            <li class="about__list-item">
+                <span class="about__list-icon">
+                    <svg class="checkmark-icon" viewBox="38.7 41.1 203.2 180.9">
+                        <path
+                            d="m95.4 222-82.6-82.6c-2.3-2.3-2.3-6.1 0-8.5L38.7 105c2.3-2.3 6.1-2.3 8.5 0l52.5 52.5L215.9 41.1c2.3-2.3 6.1-2.3 8.4 0l26 25.9c2.3 2.3 2.3 6.1 0 8.5L103.8 222c-2.3 2.3-6.1 2.3-8.4 0" />
+                    </svg>
+                </span> Letisztult vizuális szemlélet
+            </li>
 
-                <li class="about__list-item">
-                    <span class="about__list-icon checkmark-icon">
-                        <svg>
-                            <path
-                                d="m95.4 222-82.6-82.6c-2.3-2.3-2.3-6.1 0-8.5L38.7 105c2.3-2.3 6.1-2.3 8.5 0l52.5 52.5L215.9 41.1c2.3-2.3 6.1-2.3 8.4 0l26 25.9c2.3 2.3 2.3 6.1 0 8.5L103.8 222c-2.3 2.3-6.1 2.3-8.4 0" />
-                        </svg>
-                    </span> Digitális és nyomtatott megoldások
-                </li>
+            <li class="about__list-item">
+                <span class="about__list-icon">
+                    <svg class="checkmark-icon" viewBox="38.7 41.1 203.2 180.9">
+                        <path
+                            d="m95.4 222-82.6-82.6c-2.3-2.3-2.3-6.1 0-8.5L38.7 105c2.3-2.3 6.1-2.3 8.5 0l52.5 52.5L215.9 41.1c2.3-2.3 6.1-2.3 8.4 0l26 25.9c2.3 2.3 2.3 6.1 0 8.5L103.8 222c-2.3 2.3-6.1 2.3-8.4 0" />
+                    </svg>
+                </span> Technikailag átgondolt tervezés
+            </li>
 
-                <li class="about__list-item">
-                    <span class="about__list-icon checkmark-icon">
-                        <svg>
-                            <path
-                                d="m95.4 222-82.6-82.6c-2.3-2.3-2.3-6.1 0-8.5L38.7 105c2.3-2.3 6.1-2.3 8.5 0l52.5 52.5L215.9 41.1c2.3-2.3 6.1-2.3 8.4 0l26 25.9c2.3 2.3 2.3 6.1 0 8.5L103.8 222c-2.3 2.3-6.1 2.3-8.4 0" />
-                        </svg>
-                    </span> Átlátható, rugalmas együttműködés
-                </li>
+            <li class="about__list-item">
+                <span class="about__list-icon">
+                    <svg class="checkmark-icon" viewBox="38.7 41.1 203.2 180.9">
+                        <path
+                            d="m95.4 222-82.6-82.6c-2.3-2.3-2.3-6.1 0-8.5L38.7 105c2.3-2.3 6.1-2.3 8.5 0l52.5 52.5L215.9 41.1c2.3-2.3 6.1-2.3 8.4 0l26 25.9c2.3 2.3 2.3 6.1 0 8.5L103.8 222c-2.3 2.3-6.1 2.3-8.4 0" />
+                    </svg>
+                </span> Digitális és nyomtatott megoldások
+            </li>
 
-                <li class="about__list-item">
-                    <span class="about__list-icon checkmark-icon">
-                        <svg>
-                            <path
-                                d="m95.4 222-82.6-82.6c-2.3-2.3-2.3-6.1 0-8.5L38.7 105c2.3-2.3 6.1-2.3 8.5 0l52.5 52.5L215.9 41.1c2.3-2.3 6.1-2.3 8.4 0l26 25.9c2.3 2.3 2.3 6.1 0 8.5L103.8 222c-2.3 2.3-6.1 2.3-8.4 0" />
-                        </svg>
-                    </span> Folyamatos kapcsolattartás
-                </li>
+            <li class="about__list-item">
+                <span class="about__list-icon">
+                    <svg class="checkmark-icon" viewBox="38.7 41.1 203.2 180.9">
+                        <path
+                            d="m95.4 222-82.6-82.6c-2.3-2.3-2.3-6.1 0-8.5L38.7 105c2.3-2.3 6.1-2.3 8.5 0l52.5 52.5L215.9 41.1c2.3-2.3 6.1-2.3 8.4 0l26 25.9c2.3 2.3 2.3 6.1 0 8.5L103.8 222c-2.3 2.3-6.1 2.3-8.4 0" />
+                    </svg>
+                </span> Átlátható, rugalmas együttműködés
+            </li>
 
-                <li class="about__list-item">
-                    <span class="about__list-icon checkmark-icon">
-                        <svg>
-                            <path
-                                d="m95.4 222-82.6-82.6c-2.3-2.3-2.3-6.1 0-8.5L38.7 105c2.3-2.3 6.1-2.3 8.5 0l52.5 52.5L215.9 41.1c2.3-2.3 6.1-2.3 8.4 0l26 25.9c2.3 2.3 2.3 6.1 0 8.5L103.8 222c-2.3 2.3-6.1 2.3-8.4 0" />
-                        </svg>
-                    </span> Pontos kivitelezés határidőre
-                </li>
+            <li class="about__list-item">
+                <span class="about__list-icon">
+                    <svg class="checkmark-icon" viewBox="38.7 41.1 203.2 180.9">
+                        <path
+                            d="m95.4 222-82.6-82.6c-2.3-2.3-2.3-6.1 0-8.5L38.7 105c2.3-2.3 6.1-2.3 8.5 0l52.5 52.5L215.9 41.1c2.3-2.3 6.1-2.3 8.4 0l26 25.9c2.3 2.3 2.3 6.1 0 8.5L103.8 222c-2.3 2.3-6.1 2.3-8.4 0" />
+                    </svg>
+                </span> Folyamatos kapcsolattartás
+            </li>
 
-            </ul>
+            <li class="about__list-item">
+                <span class="about__list-icon">
+                    <svg class="checkmark-icon" viewBox="38.7 41.1 203.2 180.9">
+                        <path
+                            d="m95.4 222-82.6-82.6c-2.3-2.3-2.3-6.1 0-8.5L38.7 105c2.3-2.3 6.1-2.3 8.5 0l52.5 52.5L215.9 41.1c2.3-2.3 6.1-2.3 8.4 0l26 25.9c2.3 2.3 2.3 6.1 0 8.5L103.8 222c-2.3 2.3-6.1 2.3-8.4 0" />
+                    </svg>
+                </span> Pontos kivitelezés határidőre
+            </li>
 
-            <a class="button button-primary" href="#contact">Kapcsolat</a>
+        </ul>
 
-        </section>
+        <a class="button button-primary" href="#contact">Kapcsolat</a>
+
+    </section>
 
 
 
 
-        <section id="order" class="order">
-            <h2 class="section__title">A közös munka folyamata</h2>
-            <h3 class="section__subtitle">Jól felépített, átlátható munkafolyamat, ahol minden lépés egymásra épül,
-                így a tervezés kiszámítható és követhető marad.</h3>
+    <section id="order" class="order">
+        <h2 class="section__title">A közös munka folyamata</h2>
+        <h3 class="section__subtitle">Jól felépített, átlátható munkafolyamat, ahol minden lépés egymásra épül,
+            így a tervezés kiszámítható és követhető marad.</h3>
 
-            <div class="order__items">
+        <div class="order__items">
 
-                <div class="order__item">
-                    <div class="card__icon"><img src="assets/contact_icon.svg" alt="">
-                    </div>
-                    <h3 class="card__title">Érdeklődés</h3>
-                    <p class="card__text">Vedd fel velem a <a class="text__link" href="#contact">kapcsolatot</a> és
-                        egyeztessünk elképzelésed részleteiről,
-                        hogy elkészíthessem a projektre szabott ajánlatom...</p>
+            <div class="order__item">
+                <div class="card__icon"><img src="assets/contact_icon.svg" alt="">
                 </div>
-
-                <div class="order__item">
-                    <div class="card__icon"><img src="assets/contact_icon.svg" alt="">
-                    </div>
-                    <h3 class="card__title">Megrendelés</h3>
-                    <p class="card__text">Az árajánlat és <a class="text__link"
-                            href="/vallalasi_feltetelek.html">vállalási feltételeim</a> elfogadása után, amint
-                        rendelkezésre
-                        áll az összes szükséges információ, már indulhat is a közös munka...</p>
-                </div>
-
-                <div class="order__item">
-                    <div class="card__icon"><img src="assets/contact_icon.svg" alt="">
-                    </div>
-                    <h3 class="card__title">Tervezés, gyártás</h3>
-                    <p class="card__text">Folyamatos egyeztetés mellett elkészítem a megrendelt grafikai anyagot,
-                        majd látványterven prezentálom és közösen véglegesítjük...</p>
-                </div>
-
-                <div class="order__item">
-                    <div class="card__icon"><img src="assets/contact_icon.svg" alt="">
-                    </div>
-                    <h3 class="card__title">Átadás</h3>
-                    <p class="card__text">A végső simítások után a számla kiegyenlítését követően azonnal átadásra
-                        kerül elkészült megrendelésed.</p>
-                </div>
-
-                <a href="#contact" class="button button-secondary">Dolgozzunk együtt</a>
-
+                <h3 class="card__title">Érdeklődés</h3>
+                <p class="card__text">Vedd fel velem a <a class="text__link" href="#contact">kapcsolatot</a> és
+                    egyeztessünk elképzelésed részleteiről,
+                    hogy elkészíthessem a projektre szabott ajánlatom...</p>
             </div>
 
-        </section>
+            <div class="order__item">
+                <div class="card__icon"><img src="assets/contact_icon.svg" alt="">
+                </div>
+                <h3 class="card__title">Megrendelés</h3>
+                <p class="card__text">Az árajánlat és <a class="text__link" href="/vallalasi_feltetelek.html">vállalási
+                        feltételeim</a> elfogadása után, amint
+                    rendelkezésre
+                    áll az összes szükséges információ, már indulhat is a közös munka...</p>
+            </div>
+
+            <div class="order__item">
+                <div class="card__icon"><img src="assets/contact_icon.svg" alt="">
+                </div>
+                <h3 class="card__title">Tervezés, gyártás</h3>
+                <p class="card__text">Folyamatos egyeztetés mellett elkészítem a megrendelt grafikai anyagot,
+                    majd látványterven prezentálom és közösen véglegesítjük...</p>
+            </div>
+
+            <div class="order__item">
+                <div class="card__icon"><img src="assets/contact_icon.svg" alt="">
+                </div>
+                <h3 class="card__title">Átadás</h3>
+                <p class="card__text">A végső simítások után a számla kiegyenlítését követően azonnal átadásra
+                    kerül elkészült megrendelésed.</p>
+            </div>
+
+            <a href="#contact" class="button button-secondary">Dolgozzunk együtt</a>
+
+        </div>
+
+    </section>
 
 
 
 
 
-        <section id="portfolio" class="portfolio">
-            <h2 class="section__title">Megvalósított projektek</h2>
-            <h3 class="section__subtitle">Válogatás korábbi munkáimból, amelyek bemutatják vizuális stílusom és
-                tervezési szemléletem.</h3>
+    <section id="portfolio" class="portfolio">
+        <h2 class="section__title">Megvalósított projektek</h2>
+        <h3 class="section__subtitle">Válogatás korábbi munkáimból, amelyek bemutatják vizuális stílusom és
+            tervezési szemléletem.</h3>
 
-            <!-- 600x450 px -->
+        <!-- 600x450 px -->
 
-            <div class="portfolio__logo">
+        <div class="portfolio__logo">
 
-                <div class="portfolio__logo-item portfolio__container">
-                    <img class="SlideLogo" src="assets/portfolio-logo/nexpery_logo_2.jpg" alt="portfolio elem">
+            <div class="portfolio__logo-item portfolio__container">
+                <img class="SlideLogo" src="assets/portfolio-logo/nexpery_logo_2.jpg" alt="portfolio elem">
 
 
-                    <div class="portfolio__footer">
-                        <a><img class="icon-left" onclick="plusDivs(-1, 1)" src="assets/arrow-left.svg" alt=""></a>
-                        <h3>Logó</h3>
-                        <a><img class="icon-right" onclick="plusDivs(1, 1)" src="assets/arrow-right.svg" alt=""></a>
-                    </div>
-
+                <div class="portfolio__footer">
+                    <a><img class="icon-left" onclick="plusDivs(-1, 1)" src="assets/arrow-left.svg" alt=""></a>
+                    <h3>Logó</h3>
+                    <a><img class="icon-right" onclick="plusDivs(1, 1)" src="assets/arrow-right.svg" alt=""></a>
                 </div>
 
             </div>
 
+        </div>
 
 
 
 
-            <div class="portfolio__branding">
 
-                <div class="portfolio__branding-item portfolio__container">
-                    <img class="SlideBranding" src="assets/portfolio-branding/letter_Creasmart.jpg"
-                        alt="portfolio elem">
+        <div class="portfolio__branding">
 
-                    <div class="portfolio__footer">
-                        <a><img class="icon-left" onclick="plusDivs(-1, 1)" src="assets/arrow-left.svg" alt=""></a>
-                        <h3>Arculat</h3>
-                        <a><img class="icon-right" onclick="plusDivs(1, 1)" src="assets/arrow-right.svg" alt=""></a>
-                    </div>
+            <div class="portfolio__branding-item portfolio__container">
+                <img class="SlideBranding" src="assets/portfolio-branding/letter_Creasmart.jpg" alt="portfolio elem">
 
+                <div class="portfolio__footer">
+                    <a><img class="icon-left" onclick="plusDivs(-1, 1)" src="assets/arrow-left.svg" alt=""></a>
+                    <h3>Arculat</h3>
+                    <a><img class="icon-right" onclick="plusDivs(1, 1)" src="assets/arrow-right.svg" alt=""></a>
                 </div>
 
             </div>
 
+        </div>
 
 
 
 
-            <div class="portfolio__others">
 
-                <div class="portfolio__others-item portfolio__container">
-                    <img class="SlideOther" src="assets/portfolio-others/bag_Mums.jpg" alt="portfolio elem">
+        <div class="portfolio__others">
 
-                    <div class="portfolio__footer">
-                        <a><img class="icon-left" onclick="plusDivs(-1, 1)" src="assets/arrow-left.svg" alt=""></a>
-                        <h3>Egyéb</h3>
-                        <a><img class="icon-right" onclick="plusDivs(1, 1)" src="assets/arrow-right.svg" alt=""></a>
-                    </div>
+            <div class="portfolio__others-item portfolio__container">
+                <img class="SlideOther" src="assets/portfolio-others/bag_Mums.jpg" alt="portfolio elem">
 
+                <div class="portfolio__footer">
+                    <a><img class="icon-left" onclick="plusDivs(-1, 1)" src="assets/arrow-left.svg" alt=""></a>
+                    <h3>Egyéb</h3>
+                    <a><img class="icon-right" onclick="plusDivs(1, 1)" src="assets/arrow-right.svg" alt=""></a>
                 </div>
 
             </div>
 
-        </section>
+        </div>
+
+    </section>
     </main>
 
 
@@ -439,7 +444,8 @@
     <footer id="contact" class="contact">
 
         <h2 class="section__title">Lépj velem kapcsolatba</h2>
-        <h3 class="section__subtitle">Ha kérdésed van vagy egyeztetnél egy projektről, keress elérhetőségeimen!
+        <h3 class="section__subtitle h3--inverz">Ha kérdésed van vagy egyeztetnél egy projektről, keress
+            elérhetőségeimen!
         </h3>
 
         <div class="footer__item footer__item-1">
@@ -532,25 +538,22 @@
 
         <div class="copyright">
 
-            <div class="copyright__date">
-                <p>©</p>
-                <script>
-                    document.write(new Date().getUTCFullYear());
-                </script>
-            </div>
-
-            <img class="copyright__logo" src="assets/logo_white-blue.svg" alt="Royal Graphic logo">
-
-            <p>MINDEN JOG FENNTARTVA</p>
+            <span class="copyright__date">
+                &copy; <span id="current-year"> <img class="copyright__logo" src="assets/logo_white-blue.svg"
+                        alt="Royal Graphic logo"></span> Minden jog fenntartva</span>
 
             <div class="top-icon">
-                <a href="#top"><img ID="up-button" src="assets/arrow_icon.svg" alt="Ugrás az oldal tetejére"></a>
+                <a href="#top"><img class="up-button" src="assets/arrow_icon.svg" alt="Ugrás az oldal tetejére"></a>
             </div>
 
         </div>
     </footer>
 
 
+
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
 
 
 
