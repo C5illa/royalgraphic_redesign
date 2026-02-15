@@ -61,12 +61,9 @@ h2 {
     font-size: clamp(1.5rem, 3.5vw, 2rem);
 }
 
-h3 {
-    font-size: clamp(1rem, 2.5vw, 1.2rem);
-}
-
+h3,
 h4 {
-    font-size: clamp(.8rem, 2vw, 1rem);
+    font-size: clamp(1rem, 2vw, 1.1rem);
 }
 
 h1,
@@ -89,10 +86,16 @@ h1 {
     color: var(--color-bg);
 }
 
+h2 {
+    padding-bottom: 1rem;
+}
+
 h3 {
     color: var(--color-text-light);
     text-align: center;
     font-weight: 600;
+    line-height: 1.2;
+    padding-bottom: 1rem;
 }
 
 .h3--inverz {
@@ -104,6 +107,9 @@ a {
     color: var(--color-text);
 }
 
+p {
+    line-height: 1.4;
+}
 
 
 
@@ -139,6 +145,7 @@ a {
 }
 
 .button-secondary {
+    display: none;
     font-weight: 400;
     margin-left: .5rem;
     color: var(--color-text-light);
@@ -151,31 +158,47 @@ a {
     transform: scale(1.15);
 }
 
-.services__button, .button-section, .button-rating {
-    position: relative; 
+.services__button,
+.button-section,
+.button-rating {
+    position: relative;
     display: inline-block;
-    padding-right: 2.5rem; 
+    padding-right: 2.1rem;
     text-decoration: none;
     color: var(--color-text);
+    font-weight: 600;
     transition: color 0.3s ease;
 }
 
 .button__arrow {
     position: absolute;
-    right: 0.5rem;  
+    right: 0.5rem;
     top: 50%;
     transform: translateY(-50%);
-    transition: transform 0.3s ease; 
+    transition: transform 0.3s ease;
 }
 
-.services__button:hover .button__arrow, .button-section:hover .button__arrow, .button-rating:hover .button__arrow {
-    transform: translateY(-50%) translateX(5px); 
-}
-
-.button-section, .button-rating {
+.button-section,
+.button-rating {
     border: 2px solid var(--color-text);
+    padding-left: 1rem;
+    transition: border-color .2s ease-in transform .2s ease-in;
 }
 
+.services__button:hover,
+.button-section:hover {
+    border-color: transparent;
+}
+
+.services__button:hover .button__arrow,
+.button-section:hover .button__arrow,
+.button-rating:hover .button__arrow {
+    transform: translateY(-50%) translateX(5px);
+}
+
+.button-about:hover {
+    color: var(--color-text);
+}
 
 
 
@@ -412,9 +435,9 @@ a {
         position: absolute;
         width: 0;
         height: 0;
-        border-left: 9px solid transparent;
-        border-right: 9px solid transparent;
-        border-bottom: 10px solid var(--color-text-light);
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid var(--color-text-light);
         top: 100%;
         left: 50%;
         transform: translate(-50%) scaleX(0);
@@ -516,7 +539,7 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding-top: 4rem;
+    padding-top: 2rem;
     padding-bottom: 2.5rem;
 }
 
@@ -546,18 +569,14 @@ a {
 
 
 
-@media (max-width: 768px) {
-
-    h1 {
-        font-size: 2.5rem;
-    }
+@media (min-width: 768px) {
 
     .button-secondary {
-        display: none;
+        display: inline-block;
     }
 
     .hero-content {
-        padding-top: 5rem;
+        padding-top: 3rem;
     }
 }
 
@@ -580,20 +599,22 @@ a {
 \*------------------------------------*/
 
 .card__icon {
-    width: 30px;
+    max-width: 80px;
 }
 
 .checkmark-icon {
-    max-width: 30px;
+    width: 15px;
+    fill: var(--color-text-light);
+    margin-right: .4rem;
 }
 
 .button__arrow {
-    max-width: 30px;
-    display: inline-block;
+    max-width: 20px;
 }
 
 .right__arrow {
-    max-width: 30px;;
+    max-width: 30px;
+    ;
 }
 
 .footer__icons {
@@ -604,11 +625,10 @@ a {
     max-width: 30px;
 }
 
-.icon-left, .icon-right {
+.icon-left,
+.icon-right {
     max-width: 30px;
 }
-
-
 
 
 /*------------------------------------*\
@@ -625,6 +645,100 @@ a {
   #ABOUT
 \*------------------------------------*/
 
+.about__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.about__image {
+    width: clamp(200px, 25vw, 400px);
+    padding-bottom: 2rem;
+    transition: transform .3s ease-in-out;
+}
+
+.about__image:hover {
+    transform: scale(1.05);
+}
+
+.profile-picture {
+    max-width: 100%;
+}
+
+.about__text {
+    max-width: 1440px;
+}
+
+.about__text--spaced {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-weight: 800;
+    color: var(--color-text-light);
+    letter-spacing: .2rem;
+    line-height: 1.5;
+    padding: 2rem;
+}
+
+.about__text--spaced::before,
+.about__text--spaced::after {
+    content: "";
+    flex: 1;
+    height: 2px;
+    background-color: var(--color-text-light);
+    margin: 0 1rem;
+}
+
+.about__list {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 1fr;
+    gap: .8rem 5rem;
+    padding-bottom: 4rem;
+}
+
+.about__list-item {
+    display: flex;
+    justify-content: flex-start;
+}
+
+@media (min-width: 768px) {
+
+    .about__list-container {
+        max-width: 1440px;
+    }
+
+    .about__list {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1024px) {
+    .about__list {
+        gap: 1rem 8rem;
+}
+}
+
+@media (min-width: 1440px) {
+    .about__list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+
+
+
+
+
+
+
+
 
 /*------------------------------------*\
   #ORDER
@@ -633,6 +747,11 @@ a {
 /*------------------------------------*\
   #PORTFOLIO
 \*------------------------------------*/
+
+.portfolio__tag {
+    text-transform: uppercase;
+    color: var(--color-text);
+}
 
 /*------------------------------------*\
   #POPUP
@@ -649,7 +768,7 @@ a {
 \*------------------------------------*/
 
 footer {
-background: url('/assets/footer_bg.jpg') no-repeat center;
+    background: url('/assets/footer_bg.jpg') no-repeat center;
     background-size: cover;
 }
 
@@ -669,8 +788,8 @@ i {
     background-color: var(--color-text);
     color: var(--color-bg);
     font-family: var(--font-primary);
-padding: 1rem;
-padding-bottom: 1.5rem;
+    padding: 1rem;
+    padding-bottom: 1.5rem;
 }
 
 .copyright__logo {
@@ -679,7 +798,7 @@ padding-bottom: 1.5rem;
 }
 
 .copyright__text {
-   width: 100%;
-  text-align: center;
-  font-size: .8rem;
+    width: 100%;
+    text-align: center;
+    font-size: .8rem;
 }
