@@ -177,7 +177,8 @@ p {
 
 .services__button,
 .button-section,
-.button-rating {
+.button-rating,
+.price__card-button {
     position: relative;
     display: inline-block;
     padding-right: 2.1rem;
@@ -187,7 +188,14 @@ p {
     transition: color 0.3s ease;
 }
 
-.button__arrow {
+.price__card-button {
+    border-color: var(--color-text);
+    font-size: .8rem;
+    padding: .5rem;
+    padding-right: 2.1rem;
+}
+
+.button__arrow, .price__button-arrow {
     position: absolute;
     right: 0.5rem;
     top: 50%;
@@ -203,13 +211,15 @@ p {
 }
 
 .services__button:hover,
-.button-section:hover {
+.button-section:hover,
+.price__card-button:hover {
     border-color: transparent;
 }
 
 .services__button:hover .button__arrow,
 .button-section:hover .button__arrow,
-.button-rating:hover .button__arrow {
+.button-rating:hover .button__arrow,
+.price__card-button:hover .price__button-arrow  {
     transform: translateY(-50%) translateX(5px);
 }
 
@@ -224,11 +234,13 @@ p {
 
 
 
+
+
 /*------------------------------------*\
   #ICONS
 \*------------------------------------*/
 
-.card__icon img {
+.card__icon img, .price__card-icon {
     width: 100%;
 }
 
@@ -238,7 +250,7 @@ p {
     margin-right: .7rem;
 }
 
-.button__arrow {
+.button__arrow, .price__button-arrow {
     max-width: 20px;
 }
 
@@ -667,8 +679,6 @@ p {
 
 
 
-
-
 /*------------------------------------*\
   #SERVICES
 \*------------------------------------*/
@@ -700,13 +710,13 @@ p {
     padding-bottom: 1.5rem;
     max-width: 200px;
     opacity: 0;
-  transform: translateY(24px) scale(0.8);
-  transition: opacity 0.6s ease, transform 0.6s cubic-bezier(.2,.8,.2,1);
+    transform: translateY(24px) scale(0.05);
+    transition: opacity 0.7s ease, transform 0.7s cubic-bezier(.2, .8, .2, 1);
 }
 
 .card__icon.is-visible {
-  opacity: 1;
-  transform: translateY(0) scale(1);
+    opacity: 1;
+    transform: translateY(0) scale(1);
 }
 
 .services__card {
@@ -717,18 +727,15 @@ p {
     padding-bottom: 1.5rem;
 }
 
-.services__item-title {
+.services__card-title {
     text-transform: uppercase;
     font-weight: 800;
 }
 
-.services__item-subtitle {
+.services__card-subtitle {
     font-weight: 600;
     padding-bottom: 1rem;
 }
-
-
-
 
 
 
@@ -745,7 +752,7 @@ p {
         align-items: start;
     }
 
-    .services__item-title {
+    .services__card-title {
         text-align: left;
     }
 
@@ -769,8 +776,8 @@ p {
         align-items: center;
     }
 
-    .services__item-title,
-    .services__item-subtitle {
+    .services__card-title,
+    .services__card-subtitle {
         text-align: center;
     }
 
@@ -784,7 +791,7 @@ p {
         order: 0;
     }
 
-    .services__item-text {
+    .services__card-text {
         padding: 1rem 0rem;
     }
 }
@@ -793,24 +800,86 @@ p {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*------------------------------------*\
   #PRICES
 \*------------------------------------*/
+
+.price {
+    max-width: 1800px;
+    text-align: center;
+}
+
+.price__cards {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    gap: 2rem;
+    padding-top: 3rem;
+}
+
+.price__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: var(--color-bg-light);
+    border-radius: 32px;
+    text-align: left;
+}
+
+.price__card-note {
+    font-size: .7rem;
+    font-weight: 300;
+    padding-top:2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.price__card-list {
+    line-height: 1.5;
+    padding-bottom: 1rem;
+}
+
+
+
+.price__card-list-price {
+display: inline-block;
+color: var(--color-text-light);
+font-weight: 500;
+}
+
+.price__card-icon {
+    max-width: 150px;   
+}
+
+.price__card-price {
+    color: var(--color-text-light);
+    font-weight: 800;
+    font-size: clamp(1.5rem, 8vw, 7rem);
+}
+
+.card__text--small {
+    font-weight: 400;
+    font-size: clamp(1rem, 1.5vw, 1.1rem);
+}
+
+.price__card-text {
+    font-size: clamp(.7rem, 1vw, .9rem);
+}
+
+
+
+
+
+
+
+@media (min-width: 1024px) {
+    .price__card-list-icon:hover {
+    transform: translateY(-2px);
+}
+}
+
 
 
 /*------------------------------------*\
