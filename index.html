@@ -88,7 +88,7 @@
 
             <div class="services__item  card-1">
 
-                <div class="card__icon">
+                <div class="card__icon animate-on-scroll">
                     <img src="assets/graphic_icon.svg" alt="grafikai tervezés">
                 </div>
 
@@ -109,7 +109,7 @@
 
             <div class="services__item card-2">
 
-                <div class="card__icon card__icon--align">
+                <div class="card__icon card__icon--align animate-on-scroll">
                     <img src="assets/promotion_icon.svg" alt="reklámdekoráció">
                 </div>
 
@@ -131,7 +131,7 @@
 
             <div class="services__item card-3">
 
-                <div class="card__icon">
+                <div class="card__icon animate-on-scroll">
                     <img src="assets/gift_icon.svg" alt="reklámdekoráció">
                 </div>
 
@@ -165,14 +165,14 @@
 
         <div class="price__cards">
 
-             <div class="price__card price__card-1">
+            <div class="price__card price__card-1 animate-on-scroll">
                 <h3 class="price__card-title">Grafikai tervezés általános óradíja</h3>
                 <div class="price__card-icon"><img src="assets/price_icon.svg" alt="árak"></div>
                 <p class="price__card-price">8 000 Ft <span class="card__text--small">/ óra</span></p>
                 <p class="price__card-text">(alanyi adómentes szolgáltatás)</p>
             </div>
 
-            <div class="price__card price__card-2">
+            <div class="price__card price__card-2 animate-on-scroll">
                 <h3 class="price__card-title">Átlátható árazás</h3>
                 <ul class="price__card-list">
                     <li class="price__card-list-item">
@@ -217,8 +217,8 @@
                     </li>
                 </ul>
             </div>
-       
-            <div class="price__card price__card-3">
+
+            <div class="price__card price__card-3 animate-on-scroll">
                 <h3 class="price__card-title">Néhány tájékoztató jellegű ár</h3>
                 <ul class="price__card-list">
                     <li class="price__card-list-item">Logótervezés
@@ -237,8 +237,8 @@
                         <p class="price__card-list-price">89 000 Ft-tól</p>
                     </li>
                 </ul>
-                <a href="#" class="button price__card-button">Ajándéktárgy katalógus<img class="price__button-arrow" src="assets/btn_arrow.svg"
-                            alt="Jobbra nyíl"></a>
+                <a href="#" class="button price__card-button">Ajándéktárgy katalógus<img class="price__button-arrow"
+                        src="assets/btn_arrow.svg" alt="Jobbra nyíl"></a>
             </div>
 
         </div>
@@ -275,14 +275,15 @@
                     hanem hosszú távon is jól használható is legyen.
                 </p>
 
-
                 <h4 class="about__text--spaced">Miért dolgozz velem</h4>
+
             </div>
 
             <div class="about__list-container">
+
                 <div class="about__list">
 
-                    <p class="about__list-item item-1">
+                    <p class="about__list-item item-1 animate-on-scroll">
                         <span class="about__list-icon">
                             <svg class="checkmark-icon" viewBox="38.7 41.1 203.2 180.9">
                                 <path
@@ -291,7 +292,7 @@
                         </span>Letisztult vizuális szemlélet
                     </p>
 
-                    <p class="about__list-item item-2">
+                    <p class="about__list-item item-2 animate-on-scroll">
                         <span class="about__list-icon">
                             <svg class="checkmark-icon" viewBox="38.7 41.1 203.2 180.9">
                                 <path
@@ -300,7 +301,7 @@
                         </span>Technikailag átgondolt tervezés
                     </p>
 
-                    <p class="about__list-item item-3">
+                    <p class="about__list-item item-3 animate-on-scroll">
                         <span class="about__list-icon">
                             <svg class="checkmark-icon" viewBox="38.7 41.1 203.2 180.9">
                                 <path
@@ -309,7 +310,7 @@
                         </span>Digitális és nyomtatott megoldások
                     </p>
 
-                    <p class="about__list-item item-4">
+                    <p class="about__list-item item-4 animate-on-scroll">
                         <span class="about__list-icon">
                             <svg class="checkmark-icon" viewBox="38.7 41.1 203.2 180.9">
                                 <path
@@ -318,7 +319,7 @@
                         </span>Átlátható, rugalmas együttműködés
                     </p>
 
-                    <p class="about__list-item item-5">
+                    <p class="about__list-item item-5 animate-on-scroll">
                         <span class="about__list-icon">
                             <svg class="checkmark-icon" viewBox="38.7 41.1 203.2 180.9">
                                 <path
@@ -327,7 +328,7 @@
                         </span>Folyamatos kapcsolattartás
                     </p>
 
-                    <p class="about__list-item item-6">
+                    <p class="about__list-item item-6 animate-on-scroll">
                         <span class="about__list-icon">
                             <svg class="checkmark-icon" viewBox="38.7 41.1 203.2 180.9">
                                 <path
@@ -589,40 +590,28 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            const items = document.querySelectorAll('.services__item');
+            const items = document.querySelectorAll('.animate-on-scroll');
 
-            const observer = new IntersectionObserver(entries => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        const icon = entry.target.querySelector('.card__icon');
-                        if (icon) icon.classList.add('is-visible');
-                        observer.unobserve(entry.target); // csak egyszer animáljon
-                    }
-                });
-            }, { threshold: 0.5 }); // legalább 50% látszódjon
+            if (!items.length) return;
+
+            const observer = new IntersectionObserver(
+                (entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('is-visible');
+                            observer.unobserve(entry.target); // csak egyszer
+                        }
+                    });
+                },
+                {
+                    threshold: 0.2
+                }
+            );
 
             items.forEach(item => observer.observe(item));
         });
     </script>
 
-
-
-    <script>
-        const items = document.querySelectorAll('.about__list-item');
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('is-visible');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, {
-            threshold: 0.2
-        });
-
-        items.forEach(item => observer.observe(item));
-    </script>
 
 
     <script>
