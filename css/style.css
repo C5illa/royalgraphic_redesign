@@ -842,6 +842,14 @@ p {
     background-color: var(--color-bg-light);
     border-radius: .8rem;
     text-align: left;
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.price__card.is-visible {
+    opacity: 1;
+    transform: scale(1);
 }
 
 .price__card-note {
@@ -914,7 +922,7 @@ p {
 @media (min-width: 1200px) {
     .price__cards {
         grid-template-columns: 1fr 1fr 1fr;
-          grid-auto-rows: 1fr;
+        grid-auto-rows: 1fr;
     }
 
     .price__card-1 {
@@ -953,10 +961,24 @@ p {
     padding: 2rem;
 }
 
+.about__content-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .about__image {
     width: clamp(200px, 25vw, 400px);
     padding-bottom: 2rem;
-    transition: transform .3s ease-in-out;
+    margin: 0 auto;
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 0.6s ease, transform 0.3s ease-in-out;
+}
+
+.about__image.is-visible {
+    opacity: 1;
+    transform: scale(1);
 }
 
 .about__image:hover {
@@ -971,9 +993,13 @@ p {
     max-width: 1440px;
 }
 
-.about__text--spaced {
+.about__text-lined {
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+
+.about__text--spaced {
     text-align: center;
     font-weight: 800;
     color: var(--color-text-light);
@@ -982,8 +1008,8 @@ p {
     padding: 2rem;
 }
 
-.about__text--spaced::before,
-.about__text--spaced::after {
+.about__text-lined::before,
+.about__text-lined::after {
     content: "";
     flex: 1;
     height: 2px;
@@ -1039,6 +1065,26 @@ p {
 
 
 @media (min-width: 768px) {
+
+    .about__content-top {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        grid-template-rows: 1fr;
+        align-items: stretch;
+        gap: 1rem;
+    }
+
+    .about__text-lined {
+        display: flex;
+        text-align: left;
+        justify-content: flex-start;
+    }
+
+    
+
+    .about__text-lined::before {
+        display: none;
+    }
 
     .about__list-container {
         max-width: 1440px;
