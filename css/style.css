@@ -954,9 +954,10 @@ p {
 
 .about__content {
     width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     padding: 2rem;
 }
@@ -964,11 +965,11 @@ p {
 .about__content-top {
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
 .about__image {
-    width: clamp(200px, 25vw, 400px);
+    width: 100%;
+    max-width: 240px;
     padding-bottom: 2rem;
     margin: 0 auto;
     opacity: 0;
@@ -987,40 +988,42 @@ p {
 
 .profile-picture {
     max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 .about__text {
-    max-width: 1440px;
+    text-align: left;
 }
 
 .about__text-lined {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 3rem 0;
+    width: 100%;
 }
 
 .about__text--spaced {
+    white-space: nowrap;
     text-align: center;
     font-weight: 800;
     color: var(--color-text-light);
     letter-spacing: .2rem;
     line-height: 1.5;
-    padding: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
-.about__text-lined::before,
-.about__text-lined::after {
-    content: "";
+.about__line-left,
+.about__line-right {
     flex: 1;
     height: 2px;
     background-color: var(--color-text-light);
-    margin: 0 1rem;
 }
 
 .about__list {
     display: grid;
-    justify-content: center;
-    align-content: center;
     grid-template-columns: 1fr;
     gap: .8rem 5rem;
     padding-bottom: 4rem;
@@ -1067,34 +1070,38 @@ p {
 @media (min-width: 768px) {
 
     .about__content-top {
-        display: grid;
-        grid-template-columns: 200px 1fr;
-        grid-template-rows: 1fr;
-        align-items: stretch;
+        flex-direction: row;
+        align-items: center;
         gap: 1rem;
     }
 
-    .about__text-lined {
-        display: flex;
+    .about__image {
+        flex: 0 0 40%;
+        max-width: 400px;
+    }
+
+    .about__text {
+        flex: 1;
         text-align: left;
-        justify-content: flex-start;
     }
 
-    
-
-    .about__text-lined::before {
-        display: none;
+    .about__text-lined {
+justify-content: flex-start;
     }
 
-    .about__list-container {
-        max-width: 1440px;
-    }
-
-    .about__list {
-        grid-template-columns: repeat(2, 1fr);
-        justify-content: space-between;
-    }
+.about__line-left {
+    display: none;
 }
+
+.about__list {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+}
+}
+
+
+
+
 
 @media (min-width: 1024px) {
     .about__list {
