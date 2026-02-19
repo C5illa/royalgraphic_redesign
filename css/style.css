@@ -73,10 +73,7 @@ h2 {
     font-size: clamp(1.5rem, 3.5vw, 2rem);
 }
 
-h3 {
-    font-size: clamp(1.2rem, 2.2vw, 1.5rem);
-}
-
+h3,
 h4 {
     font-size: clamp(1.1rem, 2vw, 1.25rem);
 }
@@ -110,7 +107,7 @@ h1 {
 }
 
 h2 {
-    padding-bottom: 1rem;
+    padding-bottom: 1.5rem;
 }
 
 h3 {
@@ -295,7 +292,7 @@ p {
 
 .icon-left,
 .icon-right {
-    max-width: 30px;
+    height: 32px;
 }
 
 
@@ -880,6 +877,10 @@ p {
     line-height: 2rem;
 }
 
+.price__card-list-item {
+    font-weight: 300;
+}
+
 .price__card-list-price {
     display: inline-block;
     color: var(--color-text-light);
@@ -893,17 +894,17 @@ p {
 .price__card-price {
     color: var(--color-text-light);
     font-weight: 800;
-    font-size: clamp(1.5rem, 8vw, 7rem);
+    font-size: clamp(1.5rem, 6vw, 5rem);
 }
 
-.card__text--small {
-    font-weight: 400;
-    font-size: clamp(1rem, 1.5vw, 1.1rem);
-}
-
+.card__text--small,
 .price__card-text {
-    font-size: clamp(.7rem, 1vw, .9rem);
+    font-weight: 300;
+    font-size: clamp(.8rem, 1.5vw, 1.1rem);
 }
+
+
+
 
 
 @media (min-width: 768px) {
@@ -914,6 +915,12 @@ p {
 
     .price__card-1 {
         grid-column: span 2;
+    }
+
+    .card__text--small,
+    .price__card-text {
+        font-weight: 400;
+        font-size: clamp(1rem, 1.8vw, 1.2rem);
     }
 }
 
@@ -1214,11 +1221,47 @@ p {
   #PORTFOLIO
 \*------------------------------------*/
 
+.portfolio {
+    margin: 0 auto;
+}
+
+.portfolio__items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1440px;
+}
+
+.portfolio__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .portfolio__tag {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     text-transform: uppercase;
     color: var(--color-text);
 }
 
+.portfolio__tag h3 {
+    color: var(--color-text);
+    font-weight: 800;
+    padding: 1rem;
+}
+
+.icon-left:hover {
+    transform: translateX(-3px);
+}
+
+.icon-right:hover {
+    transform: translateX(3px);
+}
 
 
 
