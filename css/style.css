@@ -244,6 +244,12 @@ p {
     color: var(--color-text-light);
 }
 
+.button-center {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
 
 
 
@@ -253,7 +259,8 @@ p {
 \*------------------------------------*/
 
 .card__icon img,
-.price__card-icon {
+.price__card-icon, 
+.order__item-icon {
     width: 100%;
 }
 
@@ -270,7 +277,6 @@ p {
 
 .right__arrow {
     max-width: 30px;
-    ;
 }
 
 .footer__icons {
@@ -830,7 +836,7 @@ p {
     align-items: stretch;
     justify-content: center;
     gap: 2rem;
-    padding-top: 3rem;
+    padding: 4rem 2rem;
 }
 
 .price__card {
@@ -1125,6 +1131,73 @@ p {
 /*------------------------------------*\
   #ORDER
 \*------------------------------------*/
+
+.order {
+    margin: 0 auto;
+     max-width: 1800px;
+}
+
+.order__items {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 2rem;
+    padding: 4rem 2rem;
+}
+
+.order__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    background-color: var(--color-bg-light);
+    border-radius: .8rem;
+    padding: 2rem;
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.order__item.is-visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.order__item-icon {
+    max-width: 150px;
+    text-align: center;
+}
+
+.text__link {
+    color: var(--color-text-light);
+    font-weight: 600;
+    letter-spacing: .02rem;
+}
+
+.text__link:hover {
+    color: var(--color-text);
+}
+
+
+
+@media (min-width: 768px) {
+    .order__items {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
+
+
+
+
+@media (min-width: 1440px) {
+    .order__items {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+    }
+}
+
+
 
 
 
