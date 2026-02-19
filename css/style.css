@@ -1233,6 +1233,10 @@ p {
     max-width: 1440px;
 }
 
+.SlideLogo, .SlideBranding, .SlideOther {
+    width: 100%;
+}
+
 .portfolio__item {
     display: flex;
     flex-direction: column;
