@@ -2,7 +2,7 @@
     --color-text: #0A1522;
     --color-text-light: #00B3CC;
     --color-bg: #ffffff;
-    --color-bg-light: #D7ECEF;
+    --color-bg-light: #E3F0F4;
     --color-strong: #FFC859;
     --font-primary: "Rubik", sans-serif;
     --font-heading: "Poppins", sans-serif;
@@ -44,7 +44,7 @@ section {
 
 @media (min-width: 768px) {
     section {
-        padding-left: 6rem 2.5rem 1.2rem 2.5rem;
+        padding: 6rem 2.5rem 1.2rem 2.5rem;
     }
 }
 
@@ -831,6 +831,7 @@ p {
     max-width: 1800px;
     text-align: center;
     margin: 0 auto;
+    background-color: var(--color-bg-light);
 }
 
 .price__cards {
@@ -848,8 +849,9 @@ p {
     justify-content: space-around;
     align-items: center;
     padding: 2rem;
-    background-color: var(--color-bg-light);
+    background-color: var(--color-bg);
     border-radius: .8rem;
+    box-shadow: ;
     text-align: left;
     opacity: 0;
     transform: scale(0.95);
