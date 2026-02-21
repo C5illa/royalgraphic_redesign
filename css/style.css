@@ -203,10 +203,10 @@ p {
 }
 
 .price__card-button {
-    border-color: var(--color-text);
     font-size: .8rem;
     padding: .5rem;
     padding-right: 2.1rem;
+    color: var(--color-text-light);
 }
 
 .button__arrow,
