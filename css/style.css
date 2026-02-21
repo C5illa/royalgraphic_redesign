@@ -1387,7 +1387,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 4rem;
+    gap: 2rem;
 }
 
 .footer__item {
@@ -1407,10 +1407,6 @@ footer {
 
 .footer__icon {
     display: inline-block;
-}
-
-.footer__icon:hover {
-    transform: scale(1.05);
 }
 
 .rating {
@@ -1434,10 +1430,6 @@ footer {
 
 .rating__link a {
     padding-right: .6rem;
-}
-
-.rating__link:hover a {
-    transform: translatex(2px);
 }
 
 .rating.is-visible .rating__stars i {
@@ -1485,7 +1477,6 @@ footer {
     transition: opacity 0.8s ease, transform 0.8s ease-in;
 }
 
-
 .footer-call {
     font-size: 2rem;
     line-height: 1.5;
@@ -1500,17 +1491,16 @@ footer {
     display: block;
 }
 
-.footer-call:hover,
-.footer-mail:hover {
-    transform: scale(1.05);
-}
-
 .footer__item-contact.is-visible {
     opacity: 1;
     transform: translateY(0) scale(1);
 }
 
-
+.footer__navbar {
+    line-height: 1.8;
+    text-align: center;
+    font-weight: 600;
+}
 
 
 
@@ -1520,6 +1510,19 @@ footer {
     footer {
         padding-left: 6rem 2.5rem 1.2rem 2.5rem;
     }
+
+.footer__icon:hover {
+    transform: scale(1.05);
+}
+
+.rating__link:hover a {
+    transform: translatex(2px);
+}
+
+.footer-call:hover,
+.footer-mail:hover {
+    transform: scale(1.05);
+}
 
 }
 
