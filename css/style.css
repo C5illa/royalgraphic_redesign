@@ -254,6 +254,11 @@ p {
     padding: 2rem;
 }
 
+.button-rating {
+    font-size: .6rem;
+    padding-right: 1.7rem;
+}
+
 
 
 
@@ -277,6 +282,11 @@ p {
 .button__arrow,
 .price__button-arrow {
     max-width: 20px;
+}
+
+.button__arrow-review {
+    max-width: 15px;
+    padding-bottom: 0.05rem;
 }
 
 .footer__icon {
@@ -1430,7 +1440,16 @@ footer .section__title {
 .rating__link {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 1rem;
+}
+
+.rating__write {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .rating__link a {
