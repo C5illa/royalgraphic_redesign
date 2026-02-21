@@ -1187,11 +1187,6 @@ p {
     transform: translateY(0) scale(1);
 }
 
-
-.order__item {
-    padding: .4rem;
-}
-
 .order__item-text {
     padding-bottom: 1.5rem;
 }
@@ -1208,6 +1203,8 @@ p {
 
 
 
+
+
 @media (min-width: 768px) {
 
     .order__item-icon--align {
@@ -1221,11 +1218,6 @@ p {
 
     .order__item-title {
         text-align: left;
-    }
-
-    .order__item {
-        max-width: 70%;
-        margin: 0 auto;
     }
 }
 
