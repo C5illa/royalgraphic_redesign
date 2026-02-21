@@ -1471,6 +1471,7 @@ footer {
 }
 
 .footer__item-contact {
+    max-width: 100%;
     text-align: center;
     opacity: 0;
     transform: translateY(-0.5rem) scale(0.6);
@@ -1481,7 +1482,7 @@ footer {
     font-size: 2rem;
     line-height: 1.5;
     font-weight: 800;
-    display: block;
+    display: inline-block;     
 }
 
 .footer-mail {
@@ -1501,6 +1502,33 @@ footer {
     text-align: center;
     font-weight: 600;
 }
+.footer__navbar-item {
+display: inline-block;
+}
+
+.footer__item-1 {
+    text-align: center;
+}
+
+.footer__text-title {
+    font-weight: 800;
+}
+
+.footer__text-subtitle {
+    font-weight: 500;
+}
+
+.footer__text-small {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.footer-logo {
+    display: inline-block;
+    width: 100%
+}
+ 
+
 
 
 
@@ -1524,6 +1552,9 @@ footer {
     transform: scale(1.05);
 }
 
+.footer__navbar-item:hover {
+    transform: scale(1.05);
+}
 }
 
 
