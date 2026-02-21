@@ -227,7 +227,8 @@ p {
 
 .services__button:hover,
 .button-section:hover,
-.price__card-button:hover {
+.price__card-button:hover,
+.button-rating:hover {
     border-color: transparent;
 }
 
@@ -278,12 +279,8 @@ p {
     max-width: 20px;
 }
 
-.right__arrow {
-    max-width: 30px;
-}
-
-.footer__icons {
-    max-width: 30px;
+.footer__icon {
+    width: 80px;
 }
 
 .up-button {
@@ -295,6 +292,10 @@ p {
     height: 32px;
 }
 
+.footer__icon {
+    width: 50px;
+    padding: .2rem;
+}
 
 
 
@@ -1358,11 +1359,7 @@ p {
   #POPUP
 \*------------------------------------*/
 
-.popup__box {
 
-    display: inline;
-
-}
 
 
 
@@ -1377,16 +1374,140 @@ footer {
     background-size: cover;
 }
 
-i {
-    color: var(--color-strong);
-}
-
 .footer-logo {
     max-width: 200px;
 }
 
 footer {
     padding: 6rem 1.2rem 0rem 1.2rem;
+}
+
+.footer__items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.footer__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__item-1 {
+    order: 3;
+}
+
+.footer__icons {
+    padding: .7rem;
+}
+
+.footer__icon {
+    display: inline-block;
+}
+
+.footer__icon:hover {
+    transform: scale(1.05);
+}
+
+.rating {
+    display: inline-block;
+}
+
+.rating__stars {
+    display: flex;
+    gap: .3rem;
+}
+
+.rating__stars i {
+    color: var(--color-strong);
+}
+
+.rating__link {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+}
+
+.rating__link a {
+    padding-right: .6rem;
+}
+
+.rating__link:hover a {
+    transform: translatex(2px);
+}
+
+.rating.is-visible .rating__stars i {
+    color: var(--color-text-light);
+}
+
+@keyframes back-to-yellow {
+    from {
+        color: var(--color-text-light);
+    }
+
+    to {
+        color: var(--color-strong);
+    }
+}
+
+.rating.is-visible .rating__stars i {
+    animation: back-to-yellow 0.6s ease forwards;
+}
+
+.rating.is-visible .rating__stars i:nth-child(1) {
+    animation-delay: 0.15s;
+}
+
+.rating.is-visible .rating__stars i:nth-child(2) {
+    animation-delay: 0.25s;
+}
+
+.rating.is-visible .rating__stars i:nth-child(3) {
+    animation-delay: 0.35s;
+}
+
+.rating.is-visible .rating__stars i:nth-child(4) {
+    animation-delay: 0.45s;
+}
+
+.rating.is-visible .rating__stars i:nth-child(5) {
+    animation-delay: 0.55s;
+}
+
+.footer__item-contact {
+    text-align: center;
+    opacity: 0;
+    transform: translateY(-0.5rem) scale(0.6);
+    transition: opacity 0.8s ease, transform 0.8s ease-in;
+}
+
+
+.footer-call {
+    font-size: 2rem;
+    line-height: 1.5;
+    font-weight: 800;
+    display: block;
+}
+
+.footer-mail {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-weight: 600;
+    display: block;
+}
+
+.footer-call:hover,
+.footer-mail:hover {
+    transform: scale(1.05);
+}
+
+.footer__item-contact.is-visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
 }
 
 
