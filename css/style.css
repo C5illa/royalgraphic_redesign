@@ -6,6 +6,7 @@
     --color-strong: #FFC859;
     --font-primary: "Rubik", sans-serif;
     --font-heading: "Poppins", sans-serif;
+    --box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     --hover-coloring-filter: invert(66%) sepia(85%) saturate(4944%) hue-rotate(161deg) brightness(93%) contrast(91%);
 }
 
@@ -866,7 +867,7 @@ p {
     padding: 2rem;
     background-color: var(--color-bg);
     border-radius: .8rem;
-    box-shadow: ;
+    box-shadow: var(--box-shadow);
     text-align: left;
     opacity: 0;
     transform: scale(0.95);
@@ -1022,14 +1023,15 @@ p {
     transform: scale(1);
 }
 
-.about__image:hover {
-    transform: scale(1.05);
-}
-
 .profile-picture {
     max-width: 100%;
     height: auto;
     display: block;
+    transition: transform .3s ease-in-out;
+}
+
+.profile-picture:hover {
+    transform: scale(1.05);
 }
 
 .about__text {
@@ -1188,6 +1190,7 @@ p {
     align-items: center;
     background-color: var(--color-bg-light);
     border-radius: .8rem;
+    box-shadow: var(--box-shadow);
     padding: 2rem;
     text-align: left;
 }
