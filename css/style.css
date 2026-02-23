@@ -551,7 +551,7 @@ p {
     }
 
     .navbar__item:hover::before {
-        transform: translate(-50%) scaleX(100%);
+        transform: translate(-50%) scaleX(1);
     }
 }
 
@@ -1726,7 +1726,7 @@ footer .section__title {
     position: relative;
     max-width: 768px;
     padding: 30px;
-    background: #ffffff;
+    background: var(--color-bg);
     color: var(--color-text);
     border-radius: .8rem;
 }
@@ -1771,8 +1771,8 @@ footer .section__title {
 }
 
 .popup a {
-    color: var(--secondary-color);
-    font-family: var(--font-pair);
+    color: var(--color-text);
+    font-family: var(--font-primary);
     font-size: 1rem;
     font-weight: bold;
 }
