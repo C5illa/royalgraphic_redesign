@@ -1,0 +1,378 @@
+:root {
+  --font-color:           #0A1522;
+  --font-color-grey:      #868C92;
+  --font-color-hover:     rgba(10,21,34,.7);
+  --secondary-font-color: #ffffff;
+  --secondary-color:      #00B3CC;
+  --secondary-color-hover:#4cc9db;
+  --bg-color:             #DEEBF3;
+  --main-font:            'Roboto', sans-serif;
+  --font-pair:            'Raleway', sans-serif; 
+  --png-light-filter:      invert(52%) sepia(85%) saturate(1989%) hue-rotate(149deg) brightness(94%) contrast(101%);
+  --png-dark-filter:       invert(7%) sepia(10%) saturate(3768%) hue-rotate(172deg) brightness(95%) contrast(97%);    
+}
+
+
+
+
+
+/*------------------------------------*\
+  #BOX-SIZING
+\*------------------------------------*/
+  
+* {
+  box-sizing: border-box;
+}
+ 
+
+
+
+/*------------------------------------*\
+  #BODY
+\*------------------------------------*/
+
+body {
+  background-color: var(--bg-color);
+}
+
+
+
+
+
+/*------------------------------------*\
+  #FONTS
+\*------------------------------------*/
+      
+html {
+  font-family: var(--main-font);
+}
+
+h1 {
+  font-size: 2.2em;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: var(--font-pair);
+  font-weight: 600;
+  padding-bottom: 2rem;
+  line-height: 125%;
+}
+
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--secondary-color);
+  font-weight: 400;
+  padding-bottom: 1em;
+  line-height: 125%;
+}
+
+h3 {
+  text-align: center;
+  font-weight: 300;
+  padding-bottom: .6em;
+  font-size: .9em;
+  line-height: 125%;
+}
+
+.header__text--center {
+  text-align: center;
+  font-size: .9em;
+  line-height: 1.3em;
+  color: var(--font-color)
+}
+
+h4 {
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  font-family: var(--font-pair);
+  font-weight: 600;
+  font-size: 1.2em;
+  padding-bottom: .32em;
+}
+
+p {
+  font-size: .75em;
+  font-weight: 300;
+  width: 90%;
+  margin: 0 auto;
+  line-height: 125%;
+  color: var(--font-color-grey);
+}
+
+.product__text {
+  font-size: .9em;
+  font-weight: 400;
+  color: var(--font-color);
+}
+
+.product__price {
+  color: var(--font-color);
+  font-size: 1em;
+  font-weight: 500;
+  padding-bottom: .32em;
+}
+
+.product__text--small, .text__small--uppercase {
+  font-size: .75em;
+  text-align: center;
+  font-family: var(--font-pair);
+  font-weight: 400;
+  color: var(--secondary-color);
+  margin-bottom: 7px;
+}
+
+.text__small--uppercase {
+  text-transform: uppercase;
+}
+
+.order__link {
+  text-decoration: none;
+  color: var(--product-background);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.order__link:hover {
+  color: var(--secondary-color-hover);
+}
+
+
+
+
+
+/*------------------------------------*\
+  #HEADER
+\*------------------------------------*/
+
+header {
+  width: 75%;
+  margin: 0 auto;
+  padding-bottom: 3em;
+  padding-top: 4em;
+  display: flex;
+  flex-direction: column;
+}
+   
+.logo {
+  width: 200px;
+  margin: 0 auto;
+  padding-bottom: .4em;
+}
+
+.logo:hover {
+  transform: scale(1.01);
+}
+
+
+
+
+
+/*------------------------------------*\
+  #PRODUCTS
+\*------------------------------------*/
+
+.product-container {
+  width: 85%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(11, 1fr);
+  column-gap: 15px;
+  place-items: stretch;
+  padding-bottom: 1em;
+}
+    
+.product__pic {
+  width: 100%;
+}
+
+.product {
+  text-align: center;
+  background-color: var(--secondary-font-color);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border-radius: 20px;
+  margin-bottom: 25px;
+  padding: .5em;
+}
+      
+.product:hover {
+  transform: scale(1.01);
+}
+
+
+
+
+
+@media (max-width: 1250px) {
+    
+.product-container {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(15, 1fr);
+}
+}
+
+
+
+
+
+@media (max-width: 995px) {
+    
+.product-container {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(19, 1fr);
+  width: 80%;
+}
+
+h1 {
+  font-size: 1.8em;
+}
+}
+
+
+
+
+
+@media (max-width: 780px) {
+    
+.product-container {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(29, 1fr);
+  width: 75%;
+}
+}
+
+
+
+
+
+@media (max-width: 580px) {
+    
+.product-container {
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(57, 1fr);
+  width: 70%;
+}
+}
+
+
+
+
+
+/*------------------------------------*\
+  #BUTTONS
+\*------------------------------------*/
+
+.close {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 32px;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--font-color);
+  z-index: 1;
+}
+
+.close:hover {
+  transform: scale(1.1);
+  color: rgba(10, 21, 34, .8);
+}
+
+.button__wrapper {
+  display: flex;
+  background-color: var(--font-color);
+  justify-content: center;
+  padding-top: 1em;
+  padding-bottom: 2em;
+}
+
+.button__back--link {
+  display: block;
+  filter: var(--png-light-filter);
+  width: 40px;
+}
+
+.button__back:hover {
+  transform: translateX(-5px);
+}
+
+
+
+
+/*------------------------------------*\
+  #FOOTER INFO
+\*------------------------------------*/
+
+.footer__info {
+  padding-bottom: 2em;
+}
+
+
+
+
+/*------------------------------------*\
+  #CONTACT
+\*------------------------------------*/
+
+#contact {
+  background-color: var(--secondary-color);
+}
+
+.contact__info {
+  display: flex;
+  margin: 0 auto;
+  width: 80%;
+  flex-direction: column;
+  text-align: center;
+  line-height: 1.5;
+  padding-bottom: 1rem;
+  font-family: var(--font-pair);
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.contact__text--small {
+  font-size: .7rem;
+  font-weight: 600;
+  color: var(--font-color);
+}
+
+.contact__mail--link, .contact__tel--link {
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+.contact__tel--link {
+  font-family: var(--main-font);
+}
+
+.contact__mail--link:hover, .contact__tel--link:hover {
+  color: var(--font-color-hover)
+}
+
+.contact__logo {
+  width: 200px;
+}
+
+.contact__icon {
+  padding: 1.2rem;
+  text-align: center;
+}
+
+.contact__icon--fb, .contact__icon--messenger, .contact__icon--mail {
+width: 57px;
+padding-left: 10px;
+padding-right: 10px;
+filter: var(--png-dark-filter);
+}
+
+li {
+list-style-type: none;
+display: inline-block;
+}
+
+.contact__icon--fb:hover, .contact__icon--messenger:hover, .contact__icon--mail:hover {
+transform: scale(1.1);
+transition: all 0.1s ease-in-out;
+}

@@ -66,17 +66,17 @@ html {
 
 
 h1 {
-    font-size: clamp(2rem, 5vw, 5rem);
+    font-size: clamp(2rem, 4.5vw, 4.5rem);
 }
 
 h2 {
-    font-size: clamp(1.5rem, 3.5vw, 2rem);
+    font-size: clamp(1.5rem, 2.5vw, 1.7rem);
 }
 
 h3,
 h4,
 .popup__title {
-    font-size: clamp(1.1rem, 2vw, 1.25rem);
+    font-size: clamp(1rem, 1.5vw, 1.1rem);
 }
 
 p {
@@ -104,7 +104,7 @@ h1 {
 }
 
 .hero__text {
-    font-size: clamp(1.2rem, 2.6vw, 1.6rem);
+    font-size: clamp(1.1rem, 1.6vw, 1.3rem);
 }
 
 h2 {
@@ -290,10 +290,6 @@ p {
     padding-bottom: 0.05rem;
 }
 
-.footer__icon {
-    width: 80px;
-}
-
 .up-button {
     width: 3rem;
     cursor: pointer;
@@ -305,8 +301,8 @@ p {
 }
 
 .footer__icon {
-    width: 50px;
-    padding: .2rem;
+    width: 36px;
+    padding: .15rem;
 }
 
 
@@ -916,7 +912,7 @@ p {
 .price__card-price {
     color: var(--color-text-light);
     font-weight: 800;
-    font-size: clamp(1.5rem, 6vw, 5rem);
+    font-size: clamp(1.5rem, 5vw, 4rem);
 }
 
 .card__text--small,
@@ -1426,7 +1422,7 @@ footer .section__title {
 }
 
 .footer__icons {
-    padding: .7rem;
+    padding: .8rem;
 }
 
 .footer__icon {
@@ -1508,7 +1504,7 @@ footer .section__title {
 }
 
 .footer-call {
-    font-size: 2rem;
+    font-size: 1.6rem;
     line-height: 1.5;
     font-weight: 800;
     display: inline-block;
@@ -1617,6 +1613,7 @@ footer .section__title {
 
 
 @media (min-width: 1024px) {
+
     .footer__items {
         flex-direction: row;
         margin-left: 1rem;
