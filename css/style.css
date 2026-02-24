@@ -1754,7 +1754,7 @@ footer .section__title {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 1.5rem 0;
+    padding-top: 1.5rem;
     font-weight: 600;
     letter-spacing: 1px;
     gap: .5rem;
