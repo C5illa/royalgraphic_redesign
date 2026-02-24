@@ -1782,6 +1782,5 @@ footer .section__title {
 }
 
 .popup__close:hover {
-    color: var(--color-text-light);
     transform: scale(1.2);
 }
