@@ -113,21 +113,18 @@ p {
 }
 
 .button-more {
-  position: relative;
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   padding-right: 2.1rem;
   text-decoration: none;
   color: var(--color-text);
   font-weight: 600;
-  transition: color 0.3s ease;
 }
 
 .button__arrow-icon {
-  position: absolute;
-  right: 0.5rem;
-  top: 50%;
-  transform: translateY(-50%);
-  transition: transform 0s ease;
+  padding-left: 4px;
 }
 
 .button-back {
@@ -138,12 +135,8 @@ p {
   transform: translatex(-4px);
 }
 
-.button-more:hover {
-  border-color: transparent;
-}
-
 .button-more:hover .button__arrow-icon {
-  transform: translateY(-50%) translateX(5px);
+  transform: translatex(6px);
 }
 
 .button-more {
