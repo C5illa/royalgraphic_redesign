@@ -1367,16 +1367,6 @@ p {
 
 
 /*------------------------------------*\
-  #POPUP
-\*------------------------------------*/
-
-
-
-
-
-
-
-/*------------------------------------*\
   #FOOTER
 \*------------------------------------*/
 
@@ -1725,7 +1715,7 @@ footer .section__title {
 .popup {
     position: relative;
     max-width: 768px;
-    padding: 30px;
+    padding: 2.4rem;
     background: var(--color-bg);
     color: var(--color-text);
     border-radius: .8rem;
@@ -1737,18 +1727,49 @@ footer .section__title {
     text-align: center;
     font-family: var(--font-heading);
     font-weight: 800;
+    font-size: 1.2rem;
+}
+
+.popup__subtitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1.5rem 0;
+    font-weight: 600;
+    letter-spacing: 1px;
+    gap: .5rem;
+    color: var(--color-text-light);
+}
+
+.popup__line-right {
+    flex-grow: 1;
+    height: 2px;
+    background-color: var(--color-text-light);
 }
 
 .popup__mail {
     text-decoration: none;
     text-transform: none;
+
+}
+
+.popup__body {
+    text-align: left;
+    line-height: 1.6rem;
+    padding-bottom: .5rem;
+}
+
+.popup a {
+    color: var(--color-text);
+    font-family: var(--font-primary);
+    font-weight: bold;
 }
 
 .popup__close {
     position: absolute;
     top: 20px;
     right: 30px;
-    font-size: 2rem;
+    font-size: 1.3rem;
     font-weight: bold;
     text-decoration: none;
     color: var(--color-text);
@@ -1756,27 +1777,11 @@ footer .section__title {
     cursor: pointer;
 }
 
+.popup a:hover {
+    color: var(--color-text-light);
+}
+
 .popup__close:hover {
     color: var(--color-text-light);
     transform: scale(1.2);
-}
-
-.popup__body {
-    text-align: left;
-    line-height: 1.3rem;
-}
-
-.popup p {
-    padding-bottom: 1rem;
-}
-
-.popup a {
-    color: var(--color-text);
-    font-family: var(--font-primary);
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-.popup a:hover {
-    color: var(--color-text-light);
 }
