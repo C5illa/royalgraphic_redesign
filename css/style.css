@@ -86,7 +86,7 @@ h2 {
 h3,
 h4,
 .popup__title {
-    font-size: clamp(1rem, 1.4vw, 1.1rem);
+    font-size: clamp(.9rem, 1.2vw, 1rem);
 }
 
 p {
@@ -780,6 +780,7 @@ p {
 .services__card-subtitle {
     font-weight: 600;
     padding-bottom: 1rem;
+    line-height: 1.5;
 }
 
 
@@ -821,8 +822,7 @@ p {
         align-items: center;
     }
 
-    .services__card-title,
-    .services__card-subtitle {
+    .services__card-title {
         text-align: center;
     }
 
