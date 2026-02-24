@@ -100,8 +100,8 @@
                         amelyek nemcsak esztétikusak, hanem üzenetet hordoznak és hosszú távon is működnek.
                         Logótervezés, arculati elemek, digitális és nyomtatott grafika, webdesign - minden, ami
                         segít, hogy a márkád felismerhető és emlékezetes legyen.</p>
-                    <a class="button services__button" href="#contact">Beszéljünk róla <img src="assets/btn_arrow.svg"
-                            alt="Jobbra nyíl" class="button__arrow">
+                    <a class="button button-more" href="#contact">Beszéljünk róla <img src="assets/btn_arrow.svg"
+                            alt="Jobbra nyíl" class="button__arrow-icon">
                     </a>
                 </div>
 
@@ -122,8 +122,8 @@
                         A hangsúly az egységes megjelenésen és az átgondolt vizuális kommunikáción van – hogy
                         márkád
                         minden felületen következetesen jelenjen meg.</p>
-                    <a class="button services__button" href="#contact">Ajánlatot kérek <img src="assets/btn_arrow.svg"
-                            alt="Jobbra nyíl" class="button__arrow">
+                    <a class="button button-more" href="#contact">Ajánlatot kérek <img src="assets/btn_arrow.svg"
+                            alt="Jobbra nyíl" class="button__arrow-icon">
                     </a>
                 </div>
 
@@ -143,8 +143,8 @@
                         fényképes ajándékok, melyek minden alkalomra tökéletesek és maradandó emléket adnak.
                         Ideális választás egyedi céges ajándéknak vagy különleges alkalmakra, ahol a részletek
                         számítanak.</p>
-                    <a class="button services__button" href="/termekek.html">Termékkatalógus <img
-                            src="assets/btn_arrow.svg" alt="Jobbra nyíl" class="button__arrow">
+                    <a class="button button-more" href="/termekek.html">Termékkatalógus <img
+                            src="assets/btn_arrow.svg" alt="Jobbra nyíl" class="button__arrow-icon">
                     </a>
                 </div>
 
@@ -246,7 +246,7 @@
         <p class="price__card-note">A feltüntetett árak tájékoztató jellegűek, a pontos díj minden esetben a
             projekt alapján kerül meghatározásra!</p>
         <a href="#contact" class="button button-section">Ajánlatot kérek<img src="assets/btn_arrow.svg"
-                alt="Jobbra nyíl" class="button__arrow"></a>
+                alt="Jobbra nyíl" class="button__arrow-icon"></a>
     </section>
 
 
@@ -413,7 +413,7 @@
 
         <div class="button-center">
             <a href="#contact" class="button button-section">Dolgozzunk együtt<img src="assets/btn_arrow.svg"
-                    alt="Jobbra nyíl" class="button__arrow"></a>
+                    alt="Jobbra nyíl" class="button__arrow-icon"></a>
         </div>
 
     </section>
@@ -616,7 +616,8 @@
                     <div class="rating__write">
                         <a class="button button-rating" href="https://g.page/r/CQCcj6rHvYToEBM/review"
                             target="_blank">Véleményt
-                            írok<img src="assets/btn_arrow.svg" alt="Jobbra nyíl" class="button__arrow button__arrow-review"></a>
+                            írok<img src="assets/btn_arrow.svg" alt="Jobbra nyíl"
+                                class="button__arrow-icon button__arrow-review"></a>
                     </div>
                 </div>
             </div>
@@ -661,22 +662,28 @@
 
     <div id="impresszum" class="overlay">
         <div class="popup popup--impresszum">
+
             <h2 class="popup__title">Impresszum</h2>
-            <a class="popup__close" href="#">&times;</a>
+
+            <a class="popup__close" href="/">&times;</a>
+
             <div class="popup__body">
-                <p class="popup__subtitle">Vállalkozás adatai:</p>
 
-                <p>Név: Szabó Csilla (egyéni vállalkozó) | Royal Graphic<br>
-                    Székhely: 2310 Szigetszentmiklós, Boglya u. 125.<br>
-                    (Átvételi pont, ügyfélfogadás nincs!)<br>
-                    Adószám: 55727035-1-33<br>
-                    E-mail cím: <a class="popup__mail" href="mailto:info@royalgraphic.hu">info@royalgraphic.hu</a><br>
-                    Telefonszám: <a href="tel:+36304758532">+36 30 475 8532</a>
+                <p class="popup__subtitle">Vállalkozás adatai
+                <span class="popup__line-right"></span></p>
 
-                <p class="popup__subtitle">Tárhelyszolgáltató adatai:</p>
+                <p>Név: Szabó Csilla (egyéni vállalkozó) | Royal Graphic</p>
+                <p>Székhely: 2310 Szigetszentmiklós, Boglya u. 125.</p>
+                <p class="popup__text--small">(Átvételi pont, ügyfélfogadás nincs!)</p>
+                <p>Adószám: 55727035-1-33</p>
+                <p>E-mail cím: <a class="popup__mail" href="mailto:info@royalgraphic.hu">info@royalgraphic.hu</a></p>
+                <p>Telefonszám: <a href="tel:+36304758532">+36 30 475 8532</a></p>
 
-                <p>Név: Netmask Interactive Kft.<br>
-                    Cím: 1131 Budapest, Nővér u. 110.</p>
+                <p class="popup__subtitle">Tárhelyszolgáltató adatai
+                <span class="popup__line-right"></span></p>
+
+                <p>Név: Netmask Interactive Kft.</p>
+                <p>Cím: 1131 Budapest, Nővér u. 110.</p>
             </div>
         </div>
     </div>
@@ -767,7 +774,6 @@
                 showSlide(current);
             });
 
-            // kezdő kép
             showSlide(current);
         });
 

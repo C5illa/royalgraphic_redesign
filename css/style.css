@@ -190,7 +190,7 @@ p {
     transform: scale(1.15);
 }
 
-.services__button,
+.button-more,
 .button-section,
 .button-rating,
 .price__card-button {
@@ -210,7 +210,7 @@ p {
     color: var(--color-text-light);
 }
 
-.button__arrow,
+.button__arrow-icon,
 .price__button-arrow {
     position: absolute;
     right: 0.5rem;
@@ -226,16 +226,16 @@ p {
     transition: border-color .2s ease-in transform .2s ease-in;
 }
 
-.services__button:hover,
+.button-more:hover,
 .button-section:hover,
 .price__card-button:hover,
 .button-rating:hover {
     border-color: transparent;
 }
 
-.services__button:hover .button__arrow,
-.button-section:hover .button__arrow,
-.button-rating:hover .button__arrow,
+.button-more:hover .button__arrow-icon,
+.button-section:hover .button__arrow-icon,
+.button-rating:hover .button__arrow-icon,
 .price__card-button:hover .price__button-arrow {
     transform: translateY(-50%) translateX(5px);
 }
@@ -244,7 +244,7 @@ p {
     color: var(--color-text);
 }
 
-.services__button {
+.button-more {
     padding-left: 0;
     color: var(--color-text-light);
 }
@@ -280,7 +280,7 @@ p {
     margin-right: .7rem;
 }
 
-.button__arrow,
+.button__arrow-icon,
 .price__button-arrow {
     max-width: 20px;
 }
