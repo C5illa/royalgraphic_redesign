@@ -1,29 +1,26 @@
-/*------------------------------------*\url(http://127.0.0.1:3000/404.html)
+/*------------------------------------*\
   #VARIABLES
 \*------------------------------------*/
- 
-:root {
-    --font-color:           #0A1522;
-    --font-color-grey:      #868C92;
-    --font-color-hover:     rgba(10,21,34,.7);
-    --secondary-font-color: #ffffff;
-    --secondary-color:      #00B3CC;
-    --secondary-color-hover:#4cc9db;
-    --main-font:            'Roboto', sans-serif;
-    --font-pair:            'Raleway', sans-serif; 
-  }
 
-    
-  
-    
-  
+:root {
+    --color-text: #0A1522;
+    --color-text-light: #00B3CC;
+    --color-bg: #ffffff;
+    --font-primary: "Rubik", sans-serif;
+    --font-heading: "Poppins", sans-serif;
+}
+
+
+
+
+
 /*------------------------------------*\
   #BOX-SIZING
 \*------------------------------------*/
-  
+
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
 
 
 
@@ -34,27 +31,25 @@
 \*------------------------------------*/
 
 html {
-    margin: 0px;
-    padding: 0px;  
-  }
-  
+  margin: 0px;
+  padding: 0px;
+}
+
 .container-404 {
-    width: 60%;
-    margin: 0 auto;
-    padding-bottom: 40px;
-    display: flex;
-    flex-direction: column;
+  width: 60%;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .text-404 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px 0px;
-    line-height: 130%;
-    font-size: 1.4rem;
+  text-align: center;
+  line-height: 1.7;
+  font-size: 3rem;
 }
-  
+
 @media (max-width: 860px) {
 
   .container-404 {
@@ -62,7 +57,7 @@ html {
   }
 }
 
- 
+
 
 
 
@@ -70,40 +65,120 @@ html {
   #FONTS
 \*------------------------------------*/
 
-  html {
-    font-size:   min(3.2vw, 14px);
-    font-family: 'Roboto', sans-serif;
-    color:       var(--font-color);
-  }  
+html {
+  font-size: min(3.2vw, 14px);
+  font-family: 'Roboto', sans-serif;
+  color: var(--font-color);
+}
 
-  h1 {
-    font-family: var(--font-pair);
-    font-size: 3.2rem;
-    font-weight: bold;
-    text-align: center;
-    line-height: 1.2;
-    padding: 50px;
-    margin-top: 40px;
-  }
+h1 {
+  font-family: var(--font-pair);
+  font-size: 3.2rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.2;
+  padding: 50px;
+  margin-top: 40px;
+}
 
-  .button-main {
-    text-decoration: none;
-    font-family: var(--font-pair);
-    color: var(--font-color);
-    font-weight: 600;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    background-color: var(--secondary-color);
-    margin-top: 20px;
-    padding: 6px 15px;
-    border-radius: 8px;
-  }
 
-  .button-main:hover {
-    background-color: var(--secondary-color-hover);
-  }
 
-  p {
-    font-size: 1.5rem;
-    line-height: 1.8;
-  }
+
+
+/*------------------------------------*\
+  #BOX-SIZING
+\*------------------------------------*/
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+
+/*------------------------------------*\
+  #MARGINS
+\*------------------------------------*/
+
+html {
+  margin: 0px;
+  padding: 0px;
+}
+
+section {
+  padding: 6rem 1.2rem 1.2rem 1.2rem;
+}
+
+
+
+
+
+
+/*------------------------------------*\
+  #HEADINGS & FONTS
+\*------------------------------------*/
+
+html {
+  font-size: 16px;
+  font-family: var(--font-primary);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+
+h1 {
+  font-family: var(--font-heading);
+  color: var(--color-text);
+  font-size: clamp(2rem, 4.5vw, 4.5rem);
+}
+
+
+a {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+p {
+  line-height: 1.5;
+  font-size: clamp(1rem, 1.1vw, 1.1rem);
+}
+
+
+
+
+
+/*------------------------------------*\
+  #BUTTON
+\*------------------------------------*/
+
+.button {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  border-radius: 9999px;
+  border: 2px solid var(--color-bg);
+  padding: .4rem 2.3rem;
+  line-height: normal;
+}
+
+.button-primary {
+  font-weight: 800;
+  margin-right: .5rem;
+  color: var(--color-text);
+  background-color: var(--color-text-light);
+  border-color: transparent;
+  transition: transform .5s ease-in-out, background-color .5s ease-in-out, color .5s ease-in-out;
+}
+
+.button-primary:hover {
+  background-color: transparent;
+  color: var(--color-text-light);
+  transform: scale(1.15);
+}
+
+.button-center {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
