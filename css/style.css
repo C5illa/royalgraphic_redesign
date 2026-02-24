@@ -223,7 +223,7 @@ p {
 .button__arrow-icon,
 .price__button-arrow {
     position: absolute;
-    right: .4rem;
+    right: 10px;
     top: 50%;
     transform: translateY(-50%);
     transition: transform 0s ease;
@@ -322,6 +322,7 @@ p {
     width: 36px;
     padding: .15rem;
 }
+
 
 
 
