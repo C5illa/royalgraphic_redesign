@@ -1199,9 +1199,9 @@ p {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: var(--color-bg-light);
+   /* background-color: var(--color-bg-light);
     border-radius: .8rem;
-    box-shadow: var(--box-shadow);
+    box-shadow: var(--box-shadow); */
     padding: 2rem;
     text-align: left;
 }
@@ -1772,15 +1772,7 @@ footer .section__title {
     align-items: center;
     padding-top: 1.5rem;
     font-weight: 600;
-    letter-spacing: 1px;
     gap: .5rem;
-    color: var(--color-text-light);
-}
-
-.popup__line-right {
-    flex-grow: 1;
-    height: 2px;
-    background-color: var(--color-text-light);
 }
 
 .popup__mail {
