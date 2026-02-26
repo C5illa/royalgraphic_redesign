@@ -80,7 +80,7 @@ h1 {
 }
 
 h2 {
-    font-size: clamp(1.4rem, 2.2vw, 1.4rem);
+    font-size: clamp(1.5rem, 2.8vw, 2rem);
 }
 
 h3,
@@ -1284,8 +1284,7 @@ p {
     .order__item {
         flex-direction: column;
         flex: 1;
-        align-items: center;
-        justify-content: center;
+        justify-content: start;
     }
 
     .order__item-title {
