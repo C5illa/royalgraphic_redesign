@@ -728,7 +728,7 @@ p {
 
 .services {
     padding-bottom: 4rem;
-    max-width: 1440px;
+    max-width: 500px;
     margin: 0 auto;
 }
 
@@ -738,13 +738,15 @@ p {
     align-items: start;
     justify-content: center;
     padding-top: 3rem;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .services__item {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 auto;
+    padding: 2rem 0;
 }
 
 .card__icon {
@@ -788,7 +790,22 @@ p {
 
 @media (min-width: 768px) {
 
-    .card__icon {}
+
+.services {
+    padding-bottom: 4rem;
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+    .card-1,
+    .card-2,
+    .card-3 {
+        gap: 1rem;
+    }
+
+    .card-2 .servies__card {
+        margin-left: end;
+    }
 
     .card__icon--align {
         order: 2;
@@ -796,29 +813,34 @@ p {
 
     .services__item {
         flex-direction: row;
-        align-items: start;
-        margin: 0 auto;
+        padding-bottom: 2rem;
+    }
+
+    .services__items {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
     }
 
     .services__card-title {
         text-align: left;
     }
-
-    .services__card {
-        max-width: 70%;
-        margin: 0 auto;
-    }
-
-
 }
 
 
 
 
 
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
+
+    .services {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
     .services__items {
         flex-direction: row;
+        padding: 2rem 0 0 0;
+        gap: 4rem;
     }
 
     .services__item {
@@ -830,11 +852,7 @@ p {
         text-align: center;
     }
 
-    .services__card {
-        max-width: 90%;
-    }
-
-    .card-1,
+     .card-1,
     .card-2,
     .card-3 {
         width: calc(100vw / 3);
