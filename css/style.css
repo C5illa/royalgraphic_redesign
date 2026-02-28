@@ -82,7 +82,7 @@ h2 {
 h3,
 h4,
 .popup__title {
-    font-size: clamp(.9rem, 1.2vw, 1rem);
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
     line-height: 1.4;
 }
 
@@ -335,9 +335,12 @@ p {
     transition: transform 0.4s ease, opacity 0.4s ease, border-color 0.4s ease;
 }
 
+.bottom-line--inverz {
+    border-top: 4px solid var(--color-dark);
+}
+
 .bottom-line.is-visible {
     opacity: 1;
-    border-color: var(--color-primary);
     transform: scaleX(1);
 }
 
