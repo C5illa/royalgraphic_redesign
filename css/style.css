@@ -1477,7 +1477,6 @@ footer .section__title {
 }
 
 .footer__items {
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1487,7 +1486,6 @@ footer .section__title {
 }
 
 .footer__item {
-
     display: flex;
     flex-direction: column;
     justify-content: center;
