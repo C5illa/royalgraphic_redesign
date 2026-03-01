@@ -1472,7 +1472,7 @@ footer .section__title {
 }
 
 .footer__content {
-      max-width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 
@@ -1653,7 +1653,7 @@ footer .section__title {
     .btn-top {
         bottom: 4.5rem;
         left: auto;
-        right: 2rem;  
+        right: 2rem;
     }
 
     .footer__item-1 {
@@ -1667,15 +1667,16 @@ footer .section__title {
 
 @media (min-width: 1024px) {
 
-.footer__content {
-    align-items: center;
-    justify-content: center;
-}
+    .footer__content {
+        padding-bottom: 2rem;
+        max-width: 1440px;
+        margin: 0 auto;
+    }
 
     .footer__items {
+        display: flex;
         flex-direction: row;
-            align-items: flex-end;
-    justify-content: space-between;
+        align-items: flex-end;
     }
 
     .footer__item {
@@ -1689,29 +1690,22 @@ footer .section__title {
         order: 0;
         line-height: 1.3;
         font-size: .7rem;
-        align-items: flex-start;
+        align-self: flex-start;
         text-align: left;
     }
 
     .footer__item-2 {
-        align-items: center;
-        text-align: center;
+        align-self: flex-end;
     }
 
     .footer__item-3 {
         align-items: flex-end;
         text-align: right;
-        padding-bottom: 5.5rem;
-        line-height: 1.3;
     }
 
     .footer__navbar {
         text-align: right;
         line-height: 1.5;
-    }
-
-    .footer__item--left {
-        text-align: left;
     }
 
     .footer-logo {
