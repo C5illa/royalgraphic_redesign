@@ -662,7 +662,7 @@
 .price__item-price {
     color: var(--color-primary);
     font-weight: 800;
-    font-size: clamp(1.5rem, 6vw, 1.9rem);
+    font-size: clamp(1.5rem, 8vw, 2rem);
 }
 
 .price__item--small-text {
@@ -676,6 +676,8 @@
     flex-direction: row;
     gap: .5rem;
     justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .price__item-center {
