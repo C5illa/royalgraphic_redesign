@@ -202,12 +202,6 @@ a {
     transform: scale(1.15);
 }
 
-.btn-navbar {
-    color: var(--color-bg);
-    border: 2px solid transparent;
-    transition: transform .3s ease-in, border .3s ease-in-out;
-}
-
 .btn-more {
     display: inline-block;
     position: relative;
@@ -275,7 +269,6 @@ a {
     transform: translateX(-3px);
 }
 
-
 .btn-close {
     position: absolute;
     top: 20px;
@@ -290,7 +283,7 @@ a {
 
 .btn-close:hover {
     color: var(--color-primary);
-     transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 
@@ -518,6 +511,11 @@ a {
     animation: openmenu .3s;
 }
 
+.btn-navbar {
+    color: var(--color-bg);
+    border: 2px solid transparent;
+}
+
 
 
 
@@ -561,7 +559,9 @@ a {
 
     .btn-navbar {
         border: 2px solid var(--color-bg);
+        font-size: .95rem;
         padding: .4rem 1.4rem;
+        transition: transform .3s ease-in, border .3s ease-in-out;
     }
 
     .btn-navbar:hover {
@@ -1805,4 +1805,3 @@ footer .section__title {
 .popup__link:hover {
     color: var(--color-primary);
 }
-
