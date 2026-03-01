@@ -1,0 +1,334 @@
+:root {
+    --color-dark: #0A1522;
+    --color-primary: #00B3CC;
+    --color-bg: #F8FAFC;
+    --color-bg-soft: #EEF2F6;
+    --color-strong: #FFC859;
+    --font-primary: "Rubik", sans-serif;
+    --font-heading: "Poppins", sans-serif;
+    --box-shadow: rgba(10, 21, 34, 0.1) 2px 2px 10px;
+    --hover-coloring-filter: invert(66%) sepia(85%) saturate(4944%) hue-rotate(161deg) brightness(93%) contrast(91%);
+}
+
+
+
+
+
+/*------------------------------------*\
+  #BOX-SIZING
+\*------------------------------------*/
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+
+
+/*------------------------------------*\
+  #MARGINS
+\*------------------------------------*/
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding-top: 5rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-bottom: 2rem;
+}
+
+
+
+
+
+@media (min-width: 768px) {
+    section {
+        padding-left: 3rem;
+        padding-right: 3rem;
+        padding-bottom: 3rem;
+    }
+}
+
+
+
+
+
+/*------------------------------------*\
+  #HEADINGS & FONTS
+\*------------------------------------*/
+
+html {
+    font-size: 16px;
+    font-family: var(--font-primary);
+    color: var(--color-dark);
+    background-color: var(--color-bg);
+}
+
+
+h1 {
+    font-family: var(--font-heading);
+    color: var(--color-bg);
+    font-size: clamp(2.2rem, 5vw, 6rem);
+    font-weight: 800;
+    text-align: center;
+    line-height: 1.05;
+    padding-bottom: 1rem;
+}
+
+h2 {
+    font-family: var(--font-heading);
+    font-size: clamp(1.5rem, 2.8vw, 2rem);
+    font-weight: 800;
+    text-align: center;
+    line-height: 1.05;
+    padding-bottom: 1.5rem;
+}
+
+h3 {
+    font-family: var(--font-heading);
+    color: var(--color-dark);
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    padding-bottom: 1rem;
+
+}
+
+h4 {
+    font-family: var(--font-heading);
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    line-height: 1.4;
+}
+
+p {
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-dark);
+}
+
+.section__subtitle {
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+.popup__title {
+    font-family: var(--font-heading);
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    line-height: 1.4;
+}
+
+.card__title {
+    font-size: clamp(1.15rem, 1.65vw, 1.35rem);
+    color: var(--color-primary);
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: .05rem;
+
+}
+
+.card__subtitle {
+    font-weight: 600;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+}
+
+
+
+
+
+/*------------------------------------*\
+  #BUTTON BASICS
+\*------------------------------------*/
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    border-radius: 9999px;
+    border: 2px solid var(--color-primary);
+    padding: .4rem 2rem;
+    line-height: normal;
+}
+
+.btn-primary {
+    font-weight: 800;
+    margin-right: .5rem;
+    color: var(--color-dark);
+    background-color: var(--color-primary);
+    border-color: transparent;
+    transition: transform .5s ease-in-out, background-color .5s ease-in-out, color .5s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: transparent;
+    color: var(--color-primary);
+    transform: scale(1.15);
+}
+
+.btn-primary--inverse:hover {
+    color: var(--color-dark);
+}
+
+.btn-secondary {
+    display: none;
+    color: var(--color-primary);
+    font-weight: 400;
+    margin-left: 1rem;
+    transition: transform .4s ease-in-out, border .5s ease-in-out;
+}
+
+.btn-secondary:hover {
+    border-color: transparent;
+    transform: scale(1.15);
+}
+
+.btn-more {
+    display: inline-block;
+    position: relative;
+    color: var(--color-primary);
+    border: none;
+    font-weight: 600;
+    padding-left: 0;
+    padding-right: 2.1rem;
+    transition: transform .2s ease-in;
+}
+
+.btn-section,
+.btn-small {
+    display: inline-block;
+    position: relative;
+    color: var(--color-dark);
+    border: 2px solid var(--color-dark);
+    font-weight: 600;
+    padding-left: 1.3rem;
+    transition: transform .2s ease-in;
+}
+
+.btn-section {
+    padding-top: .6rem;
+    padding-bottom: .6rem;
+    padding-right: 2.5rem;
+}
+
+.btn-small {
+    font-size: .6rem;
+    padding-right: 1.9rem;
+}
+
+.btn-section:hover,
+.btn-small:hover {
+    border-color: transparent;
+}
+
+.btn-more:hover .button__arrow-icon,
+.btn-section:hover .button__arrow-icon,
+.btn-small:hover .button__arrow-icon {
+    transform: translateY(-50%) translateX(5px);
+}
+
+.btn-center {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.btn-next,
+.btn-prev {
+    background: none;
+    border: 0;
+    cursor: pointer;
+}
+
+.btn-next:hover {
+    filter: var(--hover-coloring-filter);
+    transform: translateX(3px);
+}
+
+.btn-prev:hover {
+    filter: var(--hover-coloring-filter);
+    transform: translateX(-3px);
+}
+
+.btn-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--color-dark);
+    transition: transform 0.2s ease, color 0.2s ease;
+    cursor: pointer;
+}
+
+.btn-close:hover {
+    color: var(--color-primary);
+    transform: scale(1.2);
+}
+
+.btn-top {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateY(4px);
+}
+
+.btn-top:hover {
+    transform: translateY(0);
+}
+
+
+
+
+
+/*------------------------------------*\
+  #ICONS & SPECIAL ELEMENTS
+\*------------------------------------*/
+
+.card__icon img,
+.price__card-icon,
+.order__item-icon {
+    width: 100%;
+}
+
+.checkmark-icon {
+    width: 15px;
+    fill: var(--color-primary);
+    margin-right: .7rem;
+}
+
+.button__arrow-icon {
+    position: absolute;
+    max-width: 20px;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0s ease;
+}
+
+.button__arrow-small {
+    max-width: 15px;
+    padding-bottom: 0.05rem;
+}
+
+.btn-top {
+    width: 3rem;
+    cursor: pointer;
+}
+
+.btn-next img,
+.btn-prev img {
+    height: 3.5rem;
+}
