@@ -152,6 +152,7 @@ a {
 \*------------------------------------*/
 
 .button {
+    font-family: var(--font-heading);
     display: inline-block;
     text-decoration: none;
     text-transform: uppercase;
@@ -199,7 +200,8 @@ a {
     position: relative;
     color: var(--color-primary);
     border: none;
-    font-weight: 600;
+    font-weight: 800;
+    font-size: .9rem;
     padding-left: 0;
     padding-right: 2.1rem;
     transition: transform .2s ease-in;
@@ -223,7 +225,7 @@ a {
 }
 
 .btn-small {
-    font-size: .6rem;
+    font-size: .7rem;
     padding-right: 1.9rem;
 }
 
