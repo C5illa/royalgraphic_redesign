@@ -317,7 +317,7 @@ a {
     right: 10px;
     top: 50%;
     transform: translateY(-50%);
-    transition: transform 0s ease;
+    transition: transform .1s ease;
 }
 
 .button__arrow-small {
