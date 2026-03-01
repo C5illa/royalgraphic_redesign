@@ -1165,6 +1165,7 @@ a {
     display: grid;
     grid-template-columns: 1fr;
     gap: .8rem 5rem;
+     line-height: 2rem;
 }
 
 .about__list-item {
