@@ -233,6 +233,16 @@ a {
     transition: transform .2s ease-in;
 }
 
+.btn-section {
+    padding-top: .6rem;
+    padding-bottom: .6rem;
+}
+
+.btn-small {
+    font-size: .6rem;
+    padding-right: 1.9rem;
+}
+
 .btn-section:hover,
 .btn-small:hover {
     border-color: transparent;
@@ -252,24 +262,11 @@ a {
     transform: translateY(-50%) translateX(5px);
 }
 
-.btn-section {
-    padding-top: .6rem;
-    padding-bottom: .6rem;
-}
-
-.btn-small {
-    font-size: .6rem;
-    padding-right: 1.9rem;
-}
-
-
-
 .btn-center {
     display: flex;
     justify-content: center;
     padding: 2rem;
 }
-
 
 
 
