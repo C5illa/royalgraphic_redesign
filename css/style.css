@@ -364,6 +364,16 @@
     padding: 2rem 1rem 2.5rem 1rem;
 }
 
+.eyebrow-text {
+    color: var(--color-bg);
+    letter-spacing: .6rem;
+    padding-bottom: 2rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: clamp(.8rem, 1.5vw, 1.2rem);
+}
+
 .hero__title--typewriter {
     display: inline-block;
     color: var(--color-primary);

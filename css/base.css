@@ -69,7 +69,7 @@ html {
 }
 
 
-h1 {
+h1, .hero__title--typewriter {
     font-family: var(--font-heading);
     color: var(--color-bg);
     font-size: clamp(2.2rem, 5vw, 6rem);
