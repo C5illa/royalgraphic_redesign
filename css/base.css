@@ -281,9 +281,12 @@ a {
 }
 
 .btn-top {
+    width: 3rem;
     position: absolute;
-    bottom: 1.5rem;
+    cursor: pointer;
+    bottom: 2.5rem;
     left: 50%;
+   margin-left: -1.5rem;
     transform: translateY(4px);
 }
 
@@ -326,8 +329,7 @@ a {
 }
 
 .btn-top {
-    width: 3rem;
-    cursor: pointer;
+    
 }
 
 .btn-next img,
