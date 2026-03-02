@@ -111,7 +111,6 @@ p {
 }
 
 .text--highlight {
-    
     color: var(--color-primary);
     margin-top: .5rem;
 }
@@ -138,14 +137,12 @@ a {
     text-transform: uppercase;
     font-weight: 800;
     letter-spacing: .05rem;
-
 }
 
 .card__subtitle {
     font-weight: 600;
     padding-top: 1rem;
     padding-bottom: 1rem;
-
 }
 
 
@@ -291,7 +288,7 @@ a {
     cursor: pointer;
     bottom: 2.5rem;
     left: 50%;
-   margin-left: -1.5rem;
+    margin-left: -1.5rem;
     transform: translateY(4px);
 }
 
@@ -331,10 +328,6 @@ a {
 .button__arrow-small {
     max-width: 15px;
     padding-bottom: 0.05rem;
-}
-
-.btn-top {
-    
 }
 
 .btn-next img,
