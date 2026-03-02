@@ -611,9 +611,6 @@
 
 .price__list-item {
     list-style-type: none;
-}
-
-.price__list-item {
     display: flex;
     justify-content: flex-start;
     opacity: 0;
@@ -817,7 +814,7 @@
 }
 
 .about__text p {
-      margin-bottom: .5rem;
+    margin-bottom: .5rem;
 }
 
 .about__text-lined {
@@ -915,7 +912,7 @@
         justify-content: space-between;
     }
 
-  
+
 }
 
 
@@ -924,11 +921,11 @@
 
 @media (min-width: 1024px) {
 
-  .about__content {
+    .about__content {
         padding-bottom: 3rem;
     }
 
-     .about__content-top {
+    .about__content-top {
         flex-direction: row;
         align-items: center;
         justify-content: center;
@@ -944,6 +941,7 @@
         flex: 1;
         text-align: left;
     }
+
     .about__list {
         gap: 1rem 8rem;
     }
