@@ -337,3 +337,33 @@ a {
 .btn-prev img {
     height: 3.5rem;
 }
+
+.footer__icon {
+    width: 36px;
+    padding: .15rem;
+}
+
+.bottom-line {
+    display: block;
+    width: 120px;
+    border-top: 4px solid var(--color-primary);
+    margin: 0 auto;
+    padding-bottom: 1.5rem;
+    opacity: 0;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.4s ease, opacity 0.4s ease, border-color 0.4s ease;
+}
+
+.bottom-line--inverse {
+    border-top: 4px solid var(--color-dark);
+}
+
+.bottom-line.is-visible {
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+
+
+
