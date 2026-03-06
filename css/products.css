@@ -1,16 +1,4 @@
-:root {
-  --font-color:           #0A1522;
-  --font-color-grey:      #868C92;
-  --font-color-hover:     rgba(10,21,34,.7);
-  --secondary-font-color: #ffffff;
-  --secondary-color:      #00B3CC;
-  --secondary-color-hover:#4cc9db;
-  --bg-color:             #DEEBF3;
-  --main-font:            'Roboto', sans-serif;
-  --font-pair:            'Raleway', sans-serif; 
-  --png-light-filter:      invert(52%) sepia(85%) saturate(1989%) hue-rotate(149deg) brightness(94%) contrast(101%);
-  --png-dark-filter:       invert(7%) sepia(10%) saturate(3768%) hue-rotate(172deg) brightness(95%) contrast(97%);    
-}
+
 
 
 
@@ -32,7 +20,7 @@
 \*------------------------------------*/
 
 body {
-  background-color: var(--bg-color);
+  background-color: var(--color-bg-soft);
 }
 
 
@@ -42,61 +30,17 @@ body {
 /*------------------------------------*\
   #FONTS
 \*------------------------------------*/
-      
-html {
-  font-family: var(--main-font);
+
+header {
+  text-align: center;
+}
+
+.header__logo {
+  padding-bottom: 3rem;
 }
 
 h1 {
-  font-size: 2.2em;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: var(--font-pair);
-  font-weight: 600;
-  padding-bottom: 2rem;
-  line-height: 125%;
-}
-
-h2 {
-  text-transform: uppercase;
-  text-align: center;
-  color: var(--secondary-color);
-  font-weight: 400;
-  padding-bottom: 1em;
-  line-height: 125%;
-}
-
-h3 {
-  text-align: center;
-  font-weight: 300;
-  padding-bottom: .6em;
-  font-size: .9em;
-  line-height: 125%;
-}
-
-.header__text--center {
-  text-align: center;
-  font-size: .9em;
-  line-height: 1.3em;
-  color: var(--font-color)
-}
-
-h4 {
-  color: var(--secondary-color);
-  text-transform: uppercase;
-  font-family: var(--font-pair);
-  font-weight: 600;
-  font-size: 1.2em;
-  padding-bottom: .32em;
-}
-
-p {
-  font-size: .75em;
-  font-weight: 300;
-  width: 90%;
-  margin: 0 auto;
-  line-height: 125%;
-  color: var(--font-color-grey);
+  padding-bottom: 6rem;
 }
 
 .product__text {
@@ -106,33 +50,17 @@ p {
 }
 
 .product__price {
-  color: var(--font-color);
-  font-size: 1em;
   font-weight: 500;
-  padding-bottom: .32em;
 }
 
-.product__text--small, .text__small--uppercase {
-  font-size: .75em;
-  text-align: center;
-  font-family: var(--font-pair);
-  font-weight: 400;
-  color: var(--secondary-color);
-  margin-bottom: 7px;
-}
-
-.text__small--uppercase {
-  text-transform: uppercase;
-}
-
-.order__link {
+.header__link {
   text-decoration: none;
   color: var(--product-background);
   text-transform: uppercase;
   font-weight: 500;
 }
 
-.order__link:hover {
+.header__link:hover {
   color: var(--secondary-color-hover);
 }
 
