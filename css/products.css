@@ -83,10 +83,9 @@ h1 {
   transform: scale(1.01);
 }
 
-.product p {
-  line-height: 1.15;
-  font-size: clamp(0.8rem, 1.8vw, 1rem);
-  font-weight: 400;
+.product__details {
+  padding: .3rem;
+  font-size: clamp(.8rem, 1.5vw, 1rem);
 }
 
 .card__title, .product__price {
