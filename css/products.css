@@ -77,15 +77,17 @@ h1 {
   overflow: hidden;
   box-shadow: var(--box-shadow);
   border-radius: .8rem;
+  padding: .3rem;
 }
 
 .product:hover {
   transform: scale(1.01);
 }
 
-.product__details {
+.product__text {
   padding: .3rem;
   font-size: clamp(.8rem, 1.5vw, 1rem);
+  line-height: 1.1;
 }
 
 .card__title, .product__price {
