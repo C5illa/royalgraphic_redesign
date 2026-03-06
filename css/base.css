@@ -71,12 +71,15 @@ html {
 
 h1 {
     font-family: var(--font-heading);
-    color: var(--color-bg);
     font-size: clamp(2.2rem, 5vw, 6rem);
     font-weight: 800;
     text-align: center;
     line-height: 1.05;
     padding-bottom: 1rem;
+}
+
+.hero-title {
+    color: var(--color-bg);
 }
 
 h2 {
