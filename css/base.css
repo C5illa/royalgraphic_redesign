@@ -179,12 +179,12 @@ a {
 
 .btn-primary:hover {
     background-color: transparent;
-    color: var(--color-primary);
+    color: var(--color-dark);
     transform: scale(1.15);
 }
 
 .btn-primary--inverse:hover {
-    color: var(--color-dark);
+    color: var(--color-primary);
 }
 
 .btn-secondary {
