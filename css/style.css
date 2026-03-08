@@ -1167,8 +1167,8 @@
         font-size: 1.2rem;
     }
 
-    .btn-next img,
-    .btn-prev img {
+    .btn-next-icon,
+    .btn-prev-icon {
         height: 2rem;
     }
 }
