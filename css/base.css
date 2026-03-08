@@ -253,7 +253,7 @@ a {
 }
 
 .btn-next,
-.btn-prev {
+.btn-prev, .btn-back {
     background: none;
     border: 0;
     cursor: pointer;
@@ -265,6 +265,11 @@ a {
 }
 
 .btn-prev:hover {
+    filter: var(--hover-coloring-filter);
+    transform: translateX(-3px);
+}
+
+.btn-back:hover img {
     filter: var(--hover-coloring-filter);
     transform: translateX(-3px);
 }
