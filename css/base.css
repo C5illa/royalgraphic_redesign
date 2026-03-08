@@ -33,6 +33,7 @@
 html {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 section {
@@ -363,7 +364,3 @@ a {
     opacity: 1;
     transform: scaleX(1);
 }
-
-
-
-
