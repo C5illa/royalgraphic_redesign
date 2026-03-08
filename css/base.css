@@ -72,10 +72,10 @@ html {
 
 h1 {
     font-family: var(--font-heading);
-    font-size: clamp(2.2rem, 5vw, 6rem);
+    font-size: clamp(2rem, 5vw, 6rem);
     font-weight: 800;
     text-align: center;
-    line-height: 1.05;
+    line-height: 1.25;
     padding-bottom: 1rem;
 }
 
@@ -253,13 +253,17 @@ a {
 }
 
 .btn-back {
-    background: none;
-    border: 0;
-    cursor: pointer;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: center;  
+    justify-content: center; 
+    gap: 0.5rem;  
+    cursor: pointer;
     padding: 3rem 0;
+}
+
+.btn-back-link {
+    display: flex;     
+    align-items: center;
 }
 
 .btn-next,
