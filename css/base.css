@@ -339,8 +339,9 @@ a {
     padding-bottom: 0.05rem;
 }
 
-.btn-next img,
-.btn-prev img {
+.btn-next-icon,
+.btn-prev-icon,
+.btn-back-icon {
     height: 3.5rem;
 }
 
