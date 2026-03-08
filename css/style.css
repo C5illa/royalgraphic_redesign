@@ -5,6 +5,10 @@
 /*HAMBURGER BUTTON*/
 
 .navbar__hamburger {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
     position: absolute;
     top: 3.6rem;
     right: 2.5rem;
@@ -1168,7 +1172,3 @@
         height: 2rem;
     }
 }
-
-
-
-
