@@ -1,10 +1,17 @@
 /*------------------------------------*\
-  #BODY
+  #LAYOUT
 \*------------------------------------*/
 
 body {
   background-color: var(--color-bg-soft);
 }
+
+main {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+
 
 
 
@@ -43,10 +50,38 @@ h1 {
   padding-bottom: 2rem;
 }
 
+.header__text-title {
+  font-weight: 800;
+  color: var(--color-primary);
+  padding-bottom: 1rem;
+}
+
 .header__text {
+  padding-top: 1rem;
   padding-bottom: 2rem;
   max-width: 680px;
   margin: 0 auto;
+}
+
+.header__text--warning {
+  padding-top: 3rem;
+      opacity: 0;
+    transform: translateY(24px) scale(0.05);
+    transition: opacity 0.7s ease, transform 0.7s cubic-bezier(.2, .8, .2, 1);
+}
+
+.header__text--warning.is-visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+
+.text-warning {
+  color: var(--color-primary);
+}
+
+.text-warning:hover {
+  color: var(--color-dark);
 }
 
 
@@ -54,7 +89,7 @@ h1 {
 
 
 /*------------------------------------*\
-  #PRODUCTS
+  #GRID
 \*------------------------------------*/
 
 .product-container {
