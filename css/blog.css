@@ -102,6 +102,10 @@ h1 {
   line-height: 1.1;
 }
 
+.btn-back {
+  padding: 6rem 0;
+}
+
 
 
 
@@ -149,19 +153,8 @@ h1 {
 
 
 
-/*------------------------------------*\
-  #BUTTON
-\*------------------------------------*/
 
-.btn-center {
-  padding: 6rem 0;
-}
 
-.btn-back {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 
 
