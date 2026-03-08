@@ -53,6 +53,7 @@ h1 {
 
 .blog {
   padding: 1rem;
+  padding-bottom: 4rem;
   max-width: 1600px;
   margin: 0 auto;
 }
@@ -102,10 +103,6 @@ h1 {
   line-height: 1.1;
 }
 
-.btn-back {
-  padding: 6rem 0;
-}
-
 
 
 
@@ -123,6 +120,10 @@ h1 {
   .blog__items {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .btn-back {
+  padding: 3rem 0;
+}
 }
 
 @media (min-width: 768px) {
