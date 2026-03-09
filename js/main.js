@@ -51,15 +51,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-    /* =========================
-      FAQ opener
-   ========================== */
-    const questions = document.querySelectorAll(".faq__question");
 
-    questions.forEach((question) => {
-        question.addEventListener("click", () => {
-            const faqItem = question.parentElement;
-            faqItem.classList.toggle("active");
+    /* =========================
+       FAQ opener
+    ========================== */
+    document.addEventListener("DOMContentLoaded", () => {
+        const faqItems = document.querySelectorAll(".faq__item");
+
+        faqItems.forEach(item => {
+            const question = item.querySelector(".faq__question");
+            question.addEventListener("click", () => {
+                // Toggle-olja a 'active' osztályt
+                item.classList.toggle("active");
+            });
         });
     });
 
