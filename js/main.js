@@ -52,30 +52,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     /* =========================
-    FAQ opener
-    ========================== */
-
-
-    document.addEventListener("DOMContentLoaded", () => {
-        const questions = document.querySelectorAll(".faq__question");
-
-        questions.forEach(question => {
-            question.addEventListener("click", () => {
-                const answer = question.nextElementSibling;
-                if (answer.style.display === "block") {
-                    answer.style.display = "none";
-                } else {
-                    answer.style.display = "block";
-                }
-            });
-        });
-    });
-
-
-
-
-    
-    /* =========================
        Portfolio slider
     ========================== */
     document.querySelectorAll('.portfolio__container').forEach(container => {

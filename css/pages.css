@@ -1,277 +1,41 @@
 /*------------------------------------*\
-  #PAGE LAYOUT
+  #HEADER
 \*------------------------------------*/
 
-.page {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 4rem 1.5rem 6rem;
-}
-
-
-/*------------------------------------*\
-  #PAGE HEADER
-\*------------------------------------*/
-
-.page-header {
-    margin-bottom: 3rem;
-    text-align: center;
-}
-
-.page-title {
-    font-family: var(--font-heading);
-    font-size: clamp(2rem, 4vw, 3.2rem);
-    font-weight: 800;
-    color: var(--color-text);
-    margin-bottom: 1rem;
-}
-
-.page-subtitle {
-    font-size: 1.1rem;
-    font-weight: 300;
-    color: var(--color-text-light);
-    max-width: 720px;
-    margin: 0 auto;
-    line-height: 1.5;
-}
-
-
-/*------------------------------------*\
-  #PAGE CONTENT
-\*------------------------------------*/
-
-.page-content {
-    font-size: 1rem;
-    line-height: 1.7;
-    color: var(--color-text);
-}
-
-.page-content p {
-    margin-bottom: 1.4rem;
-    max-width: 75ch;
-}
-
-.page-content h2 {
-    font-family: var(--font-heading);
-    font-size: 1.4rem;
-    font-weight: 700;
-    margin: 3rem 0 1rem;
-    color: var(--color-text);
-}
-
-.page-content h3 {
-    font-family: var(--font-heading);
-    font-size: 1.15rem;
-    font-weight: 600;
-    margin: 2rem 0 0.8rem;
-    color: var(--color-text-light);
-}
-
-
-/*------------------------------------*\
-  #RESPONSIVE
-\*------------------------------------*/
-
-@media (max-width: 768px) {
-    .page {
-        padding: 3rem 1.2rem 4rem;
-    }
-
-    .page-subtitle {
-        font-size: 1rem;
-    }
-}
-
-
-/*------------------------------------*\
-  #active, now running on site!!!
-\*------------------------------------*/
-
-:root {
-  --font-color:           #0A1522;
-  --font-color-grey:      #868C92;
-  --font-color-hover:     #535b64;
-  --secondary-font-color: #ffffff;
-  --secondary-color:      #00B3CC;
-  --secondary-color-hover:#4cc9db;
-  --main-font:            'Roboto', sans-serif;
-  --font-pair:            'Raleway', sans-serif; 
-  --png-light-filter:      invert(52%) sepia(85%) saturate(1989%) hue-rotate(149deg) brightness(94%) contrast(101%);
- }
-
-   
-/*------------------------------------*\
-#BOX-SIZING
-\*------------------------------------*/
-  
-* {
-  box-sizing: border-box;
-}
-  
-  
-  
-  
-  
-/*------------------------------------*\
-  #BODY
-\*------------------------------------*/
-  
-html {
-  margin: 0px;
-  padding: 0px;  
-  font-family: 'Roboto', sans-serif;
-  color: var(--font-color);
-}
-  
-body {
-  width: 70vw;
-  text-align: justify;
+header {
+  text-align: center;
+  max-width: 1440px;
   margin: 0 auto;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  line-height: 1.5rem;
+  padding: 3rem;
 }
-  
+
+.logo {
+  width: 150px;
+  margin: 0 auto;
+}
+
+.logo:hover {
+  transform: scale(1.01);
+}
+
+.header__logo {
+  padding-bottom: 3rem;
+}
+
+.header__button {
+  padding-bottom: 4rem;
+}
+
 h1 {
-  font-size: 2.2em;
-  padding-bottom: 1rem;
-  padding-top: 3rem;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: var(--font-pair);
-  font-weight: 600;
-  line-height: 100%;
-}
-  
-h2 {
-  text-align: center;
-  font-family: var(--font-pair);
-  text-transform: uppercase;
-  font-size: 1.3em;
-  padding-bottom: 3em;
-}
-  
-h3 {
-  font-size: 1em;
-  padding-bottom: 1.2em;
-  padding-top: 1.8em;
-  font-weight: bold;
+  padding-bottom: 6rem;
+  font-size: clamp(2.2rem, 3.5vw, 4rem);
 }
 
-h4 {
-  font-size: 1em;
-  padding-bottom: 1em;
-  padding-top: 2em;
-  font-weight: 500;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.text__left {
-  text-align: left;
-}
-
-.subtitle__1 {
-  font-weight: 450;
-  padding-top: 1em;
-  padding-bottom: .5em;
-}
-
-.subtitle__underline {
-  font-weight: 450;
-  text-decoration: underline;
-}
-
-.subtitle__grey {
-  color: grey;
-  font-weight: 300;
-  margin-top: -1.1em;
-  text-align: center;
-  display: inline;
-}
-
-.subtitle__minus-margin {
-  margin-top: -2em;
-}
-
-.subtitle__italic {
-  font-style: italic;
-}
-
-.subtitle__blue {
-  color: var(--secondary-color);
-}
-
-.subtitle__small {
-  font-size: .8em;
-}
-
-li {
-  list-style-type: disc;
-  margin-left: 2em;
-}
-
-a {
-  text-decoration: none;
-  color: var(--secondary-color);
-}
-
-a:hover {
-  color: var(--secondary-color-hover);
+.section__subtitle {
+  padding-bottom: 2rem;
 }
 
 
-
-
-
-
-/*-----------------------------------*\
-  #BUTTONS
-\*------------------------------------*/
-
-.close {
-  position: fixed;
-  top: 40px;
-  right: 30px;
-  transition: all 200ms;
-  font-size: 32px;
-  font-weight: bold;
-  text-decoration: none;
-  color: var(--font-color);
-}
-
-.close:hover {
-  color: rgba(10, 21, 34, .8);
-  transform: scale(1.1);
-}
-
-.button__wrapper {
-  display: flex;
-  width: 60%;
-  justify-content: space-evenly;
-  margin: 0 auto;
-  padding-top: 4em;
-  padding-bottom: 3em;
-}
-
-.button__back--link {
-  width: 40px;
-}
-
-.button__back:hover {
-  transform: translateX(-5px);
-  filter: var(--png-light-filter);
-}
-
-.button__print--link {
-  width: 40px;
-}
-
-.button__print--link:hover {
-  content: url('assets/icon-print-hover.png');
-}
-  
-  
 
 
 
@@ -280,59 +44,34 @@ a:hover {
 \*------------------------------------*/
 
 .faq {
-  padding: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  padding: 1rem;
 }
 
-.faq__question p {
-  font-family: var(--font-pair);
+.faq__question {
+  padding: 1rem;
   font-weight: 600;
-  margin: 5px;
-  padding: 0;
-  font-size: 1em;
-}
-
-.faq__answer p{
-  margin: 5px;
-  padding: 10px;
-  font-size: .9em;
-  font-style: italic;
-  border-bottom: 2px solid var(--secondary-color);
-}
-
-.faq:hover{
-  cursor: pointer;
-}
-
-.faq__question:hover {
-  color: var(--secondary-color);
 }
 
 .faq__answer {
+  padding: .5rem;
+  font-style: italic;
+  border-bottom: 2px solid var(--color-primary);
   display: none;
 }
 
-.faq.active .faq__answer {
+.faq__question:hover {
+  cursor: pointer;
+  color: var(--color-primary);
+}
+
+.faq__item.active .faq__answer {
   display: block;
 }
 
 .faq__link {
-  color: var(--secondary-color);
   text-decoration: none;
 }
 
 .faq__link:hover {
-  color: var(--secondary-color-hover);
-}
-
-
-
-
-
-@media (max-width: 860px) {
-
-p, li {
-  font-size: .9em;
-}
+  color: var(--color-primary);
 }
