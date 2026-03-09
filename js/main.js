@@ -51,18 +51,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
     /* =========================
-       FAQ opener
+    FAQ opener
     ========================== */
-    document.addEventListener("DOMContentLoaded", () => {
-        const faqItems = document.querySelectorAll(".faq__item");
 
-        faqItems.forEach(item => {
-            const question = item.querySelector(".faq__question");
+
+    document.addEventListener("DOMContentLoaded", () => {
+        const questions = document.querySelectorAll(".faq__question");
+
+        questions.forEach(question => {
             question.addEventListener("click", () => {
-                // Toggle-olja a 'active' osztályt
-                item.classList.toggle("active");
+                const answer = question.nextElementSibling;
+                if (answer.style.display === "block") {
+                    answer.style.display = "none";
+                } else {
+                    answer.style.display = "block";
+                }
             });
         });
     });
@@ -70,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
+    
     /* =========================
        Portfolio slider
     ========================== */
