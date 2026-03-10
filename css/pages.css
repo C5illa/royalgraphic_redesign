@@ -116,10 +116,6 @@ h1 {
   padding-bottom: 1.5rem;
 }
 
-.page__body p {
-  padding-left: 1rem;
-}
-
 .page__title {
   text-align: center;
   font-weight: 600;
@@ -133,14 +129,13 @@ h1 {
 }
 
 .page__list {
-  padding-left: 1.5rem;
+  padding: 1.5rem;
   line-height: 1.5;
   list-style-type: disc;
 }
 
-ul.disc-list {
+::marker {
   list-style-type: disc;
-  color: var(--color-primary);    
   font-size: 1.2rem;
 }
 
