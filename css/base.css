@@ -253,6 +253,10 @@ a {
 }
 
 .btn-back {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: .8rem;
+    text-transform: uppercase;
     display: flex;
     align-items: center;  
     justify-content: center; 
@@ -356,7 +360,7 @@ a {
 .btn-next-icon,
 .btn-prev-icon,
 .btn-back-icon {
-    height: 3.5rem;
+    height: 3rem;
 }
 
 .footer__icon {
