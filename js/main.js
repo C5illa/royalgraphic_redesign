@@ -84,3 +84,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+
+
+
+
+
+/* =========================
+      Close link to previous page
+   ========================== */
+const closeLink = document.getElementById('closeLink');
+if (document.referrer) {
+    closeLink.href = document.referrer;
+} else {
+    closeLink.href = '/'; // fallback, pl. főoldal
+}
