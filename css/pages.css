@@ -45,22 +45,27 @@ h1 {
 
 .faq {
   padding: 1rem;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .faq__question {
   padding: 1rem;
   font-weight: 600;
+   cursor: pointer;
 }
 
 .faq__answer {
   padding: .5rem;
-  font-style: italic;
-  border-bottom: 2px solid var(--color-primary);
+  font-size: .9rem;
   display: none;
 }
 
-.faq__question:hover {
-  cursor: pointer;
+.faq__answer p {
+  padding-left: 2rem;
+}
+
+.faq__item.active .faq__question {
   color: var(--color-primary);
 }
 
@@ -74,4 +79,21 @@ h1 {
 
 .faq__link:hover {
   color: var(--color-primary);
+}
+
+.faq__answer-divider {
+  display: block;
+  max-width: 100px;
+  border-top: 4px solid var(--color-primary);
+  margin-top: 1rem;
+  margin-left: 1rem;
+  opacity: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .2s ease, opacity .2s ease, border-color .2s ease;
+}
+
+.faq__answer-divider.is-visible {
+  opacity: 1;
+  transform: scaleX(1);
 }
