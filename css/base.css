@@ -124,8 +124,12 @@ p {
     font-weight: 400;
 }
 
-.text--offset {
+.text--offset-left {
     padding-left: 1.5rem;
+}
+
+.text--offset-top {
+    padding-top: 1.5rem;
 }
 
 a {
