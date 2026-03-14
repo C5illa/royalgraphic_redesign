@@ -134,7 +134,9 @@ h1 {
   list-style-type: disc;
 }
 
-
+p {
+  margin: 0;
+}
 
 
 
