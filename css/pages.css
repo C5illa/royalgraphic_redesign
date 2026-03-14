@@ -52,7 +52,7 @@ h1 {
 .faq__question {
   padding: 1rem;
   font-weight: 600;
-   cursor: pointer;
+  cursor: pointer;
 }
 
 .faq__answer {
@@ -121,6 +121,15 @@ h1 {
   color: var(--color-primary);
 }
 
+.page__subtitle {
+  font-weight: 600;
+}
+
+.page__seciton-title {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
 .page__list {
   padding: 0 1.5rem;
   line-height: 1.5;
@@ -136,6 +145,10 @@ p {
   margin: 0;
 }
 
+.page__link {
+  font-weight: 600;
+}
+
 .page__link:hover {
   color: var(--color-primary);
 }
@@ -143,11 +156,11 @@ p {
 
 
 @media (min-width: 768px) {
-    .page__title {
-        text-align: left;
-    }
+  .page__title {
+    text-align: left;
+  }
 
-    .page__body {
-      padding: 1rem 2rem;
-    }
-} 
+  .page__body {
+    padding: 1rem 2rem;
+  }
+}
