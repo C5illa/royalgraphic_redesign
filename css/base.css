@@ -125,11 +125,15 @@ p {
 }
 
 .text--offset-left {
-    padding-left: 1.5rem;
+    padding-left: 1rem;
 }
 
 .text--offset-top {
-    padding-top: 1.5rem;
+    padding-top: 1rem;
+}
+
+.text--offset-bottom {
+    padding-bottom: 1rem;
 }
 
 a {
