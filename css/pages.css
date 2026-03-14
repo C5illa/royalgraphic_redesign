@@ -112,22 +112,24 @@ h1 {
 }
 
 .page__paragraph {
-  padding-bottom: 1rem;
+  padding-bottom: 1.5rem;
 }
 
 .page__title {
   text-align: center;
   font-weight: 600;
   color: var(--color-primary);
+  padding-bottom: 1rem;
 }
 
 .page__subtitle {
   font-weight: 600;
+  text-transform: uppercase;
 }
 
-.page__seciton-title {
-  font-weight: 400;
-  text-transform: uppercase;
+.page__section-title {
+font-weight: 500;
+padding: .5rem 0;
 }
 
 .page__list {
