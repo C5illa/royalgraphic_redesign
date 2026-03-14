@@ -118,7 +118,6 @@ h1 {
 .page__title {
   text-align: center;
   font-weight: 600;
-  padding: .5rem;
   color: var(--color-primary);
 }
 
@@ -146,5 +145,9 @@ p {
 @media (min-width: 768px) {
     .page__title {
         text-align: left;
+    }
+
+    .page__body {
+      padding: 1rem 2rem;
     }
 } 
