@@ -112,8 +112,7 @@ h1 {
 }
 
 .page__paragraph {
-  padding-top: .5rem;
-  padding-bottom: 1.5rem;
+  padding-bottom: 1rem;
 }
 
 .page__title {
@@ -123,19 +122,23 @@ h1 {
   color: var(--color-primary);
 }
 
-.text--highlight {
-  color: var(--color-dark);
-  font-weight: 500;
-}
-
 .page__list {
-  padding: 1.5rem;
+  padding: 0 1.5rem;
   line-height: 1.5;
   list-style-type: disc;
 }
 
+.page__sublist {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+}
+
 p {
   margin: 0;
+}
+
+.page__link:hover {
+  color: var(--color-primary);
 }
 
 
