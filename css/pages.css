@@ -140,8 +140,8 @@ h1 {
 }
 
 .page__section-title {
-font-weight: 500;
-padding: .5rem 0;
+  font-weight: 500;
+  padding: .5rem 0;
 }
 
 .page__list {
@@ -151,7 +151,7 @@ padding: .5rem 0;
 }
 
 li {
-  line-height:  1.5;
+  line-height: 1.5;
 }
 
 .page__sublist {
@@ -160,7 +160,7 @@ li {
 }
 
 .page__legal {
-  font-size: 0.9rem;   
+  font-size: 0.9rem;
   font-weight: 500;
   font-style: italic;
 }
@@ -177,14 +177,7 @@ p {
   color: var(--color-primary);
 }
 
-.btn-print-link {
-  text-transform: uppercase;
-}
 
-.btn-print-link:hover img {
-  filter: var(--hover-coloring-filter);
-  transform: translateY(-2px);
-}
 
 
 
@@ -196,4 +189,32 @@ p {
   .page__body {
     padding: 1rem 2rem;
   }
+}
+
+
+/*------------------------------------*\
+  #BUTTON
+\*------------------------------------*/
+
+.btn-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-print {
+ padding-top: 0;
+}
+
+
+@media (min-width: 768px) {
+  .btn-flex {
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 4rem
+  }
+
+  .btn-print {
+    padding-top: 3rem;
+  }
+
 }
