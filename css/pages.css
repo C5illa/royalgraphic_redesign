@@ -177,6 +177,15 @@ p {
   color: var(--color-primary);
 }
 
+.btn-print-link {
+  text-transform: uppercase;
+}
+
+.btn-print-link:hover img {
+  filter: var(--hover-coloring-filter);
+  transform: translateY(-2px);
+}
+
 
 
 @media (min-width: 768px) {

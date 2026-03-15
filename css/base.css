@@ -290,7 +290,7 @@ ul {
     padding: 2rem;
 }
 
-.btn-back {
+.btn-back, .btn-print {
     font-family: var(--font-heading);
     font-weight: 700;
     font-size: .8rem;
@@ -303,7 +303,7 @@ ul {
     padding: 3rem 0;
 }
 
-.btn-back-link {
+.btn-back-link, .btn-print-link {
     display: flex;     
     align-items: center;
 }
