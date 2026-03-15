@@ -290,21 +290,23 @@ ul {
     padding: 2rem;
 }
 
-.btn-back, .btn-print {
+.btn-back,
+.btn-print {
     font-family: var(--font-heading);
     font-weight: 700;
     font-size: .8rem;
     text-transform: uppercase;
     display: flex;
-    align-items: center;  
-    justify-content: center; 
-    gap: 0.5rem;  
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
     cursor: pointer;
     padding: 3rem 0;
 }
 
-.btn-back-link, .btn-print-link {
-    display: flex;     
+.btn-back-link,
+.btn-print-link {
+    display: flex;
     align-items: center;
 }
 
@@ -327,7 +329,12 @@ ul {
 
 .btn-back:hover img {
     filter: var(--hover-coloring-filter);
+
     transform: translateX(-3px);
+}
+
+.btn-print:hover img {
+    filter: var(--hover-coloring-filter);
 }
 
 .btn-close {
@@ -398,9 +405,13 @@ ul {
 
 .btn-next-icon,
 .btn-prev-icon,
-.btn-back-icon,
-.print-icon {
+.btn-back-icon {
     height: 3rem;
+}
+
+.print-icon {
+    height: 1.5rem;
+    margin-right: .2rem;
 }
 
 .footer__icon {
