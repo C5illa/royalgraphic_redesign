@@ -17,10 +17,13 @@ body {
   margin: 0 auto;
   padding-bottom: 2rem;
   padding-top: 2rem;
+  
+}
+
+.page__bg {
   display: flex;
   flex-direction: column;
 }
-
 
 .page__text {
   text-align: center;
