@@ -138,6 +138,10 @@ p {
     text-align: center;
 }
 
+.text--underline {
+    text-decoration: underline;
+}
+
 .space-left {
     padding-left: 1rem;
 }
