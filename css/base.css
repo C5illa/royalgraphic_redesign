@@ -371,7 +371,8 @@ ul {
 
 .card__icon img,
 .price__card-icon,
-.order__item-icon {
+.order__item-icon,
+.print-icon {
     width: 100%;
 }
 
@@ -397,7 +398,8 @@ ul {
 
 .btn-next-icon,
 .btn-prev-icon,
-.btn-back-icon {
+.btn-back-icon,
+.print-icon {
     height: 3rem;
 }
 
