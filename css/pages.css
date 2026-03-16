@@ -86,6 +86,7 @@ h1 {
 
 .faq__link {
   text-decoration: none;
+  font-weight: 500;
 }
 
 .faq__link:hover {
