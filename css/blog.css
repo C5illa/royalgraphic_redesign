@@ -149,7 +149,40 @@ h1 {
 
 
 
+.space__bottom {
+  padding-bottom: 6rem;
+}
 
+
+
+
+/*------------------------------------*\
+  #COPYRIGHT
+\*------------------------------------*/
+
+.copyright {
+    color: var(--color-bg);
+    background-color: var(--color-dark);
+    font-family: var(--font-primary);
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+.copyright__logo {
+    max-width: 120px;
+    margin-bottom: -.15rem;
+}
+
+.copyright__text {
+    width: 100%;
+    text-align: center;
+    font-size: .8rem;
+}
 
 
 
