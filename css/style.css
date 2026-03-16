@@ -130,7 +130,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    gap: .4rem;
+    gap: .5rem;
 }
 
 .navbar__item,
@@ -196,7 +196,6 @@
         flex-direction: row;
         justify-content: end;
         list-style: none;
-        gap: .8rem;
     }
 
     .btn-navbar {
@@ -234,23 +233,11 @@
     .navbar__item:hover::after {
         transform: scaleX(1);
     }
-
-
-
 }
 
 
 
 
-
-@media (min-width: 1440px) {
-
-    .navbar__item {
-        padding-left: 2.3rem;
-        padding-right: 2.3rem;
-    }
-
-}
 
 @media (max-width: 380px) {
 
