@@ -401,6 +401,26 @@
     align-items: center;
     margin: 0 auto;
     padding: 2rem 0;
+    opacity: 0;
+    transform: translateY(50px) scale(0.5);
+    transition: transform 1s cubic-bezier(0.68, -0.55, 0.27, 1.55), opacity 1s ease;
+}
+
+.services__item.is-visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+.card-1 {
+    transition-delay: 0;
+}
+
+.card-2 {
+    transition-delay: 0.2s;
+}
+
+.card-3 {
+    transition-delay: 0.3s;
 }
 
 .card__icon {
@@ -409,14 +429,6 @@
     padding: .4rem;
     padding-bottom: 1.5rem;
     max-width: 100px;
-    opacity: 0;
-    transform: translateY(24px) scale(0.05);
-    transition: opacity 0.7s ease, transform 0.7s cubic-bezier(.2, .8, .2, 1);
-}
-
-.card__icon.is-visible {
-    opacity: 1;
-    transform: translateY(0) scale(1);
 }
 
 .services__card {
@@ -479,7 +491,7 @@
     .services__items {
         flex-direction: row;
         padding: 2rem 0 0 0;
-        gap: 4rem;
+        gap: 5rem;
     }
 
     .services__item {
@@ -571,13 +583,13 @@
     display: flex;
     justify-content: flex-start;
     opacity: 0;
-    transform: translateY(40px) scale(0.8);
-    transition: opacity 1s ease-in, transform 3s ease;
+    transform: translateX(200px);
+    transition: opacity .3s ease-in, transform .6s ease;
 }
 
 .price__list-item.is-visible {
     opacity: 1;
-    transform: translateY(0) scale(1);
+    transform: translateX(0);
 }
 
 .price__list-item-1 {
@@ -585,23 +597,23 @@
 }
 
 .price__list-item-2 {
-    transition-delay: 0.05s;
-}
-
-.price__list-item-3 {
     transition-delay: 0.1s;
 }
 
-.price__list-item-4 {
-    transition-delay: 0.15s;
-}
-
-.price__list-item-5 {
+.price__list-item-3 {
     transition-delay: 0.2s;
 }
 
+.price__list-item-4 {
+    transition-delay: 0.3s;
+}
+
+.price__list-item-5 {
+    transition-delay: 0.4s;
+}
+
 .price__list-item-6 {
-    transition-delay: 0.25s;
+    transition-delay: 0.5s;
 }
 
 .price__item-2 {
@@ -613,7 +625,7 @@
     border-radius: .8rem;
     box-shadow: var(--box-shadow);
     opacity: 0;
-    transform: scale(0.95);
+    transform: scale(0.6);
     transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
@@ -811,37 +823,37 @@
     display: flex;
     justify-content: flex-start;
     opacity: 0;
-    transform: translateY(40px) scale(0.8);
-    transition: opacity 1s ease-in, transform 3s ease;
+    transform: scale(0.1);
+    transition: opacity .3s ease-in, transform .6s ease;
 }
 
 .about__list-item.is-visible {
     opacity: 1;
-    transform: translateY(0) scale(1);
+    transform: scale(1);
 }
 
-.item-1 {
+.about__list-item-1 {
     transition-delay: 0s;
 }
 
-.item-2 {
-    transition-delay: 0.05s;
-}
-
-.item-3 {
-    transition-delay: 0.1s;
-}
-
-.item-4 {
-    transition-delay: 0.15s;
-}
-
-.item-5 {
+.about__list-item-2 {
     transition-delay: 0.2s;
 }
 
-.item-6 {
-    transition-delay: 0.25s;
+.about__list-item-3 {
+    transition-delay: 0.3s;
+}
+
+.about__list-item-4 {
+    transition-delay: 0.4s;
+}
+
+.about__list-item-5 {
+    transition-delay: 0.5s;
+}
+
+.about__list-item-6 {
+    transition-delay: 0.6s;
 }
 
 .button-about {
@@ -946,6 +958,30 @@
     text-align: left;
     padding: .4rem;
     gap: 1rem;
+    opacity: 0;
+  transform: translateY(-50px); 
+  transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+.order__item.is-visible {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+}
+
+.order__item:nth-child(1) {
+    transition-delay: 0s;
+}
+
+.order__item:nth-child(2) {
+    transition-delay: 0.6s;
+}
+
+.order__item:nth-child(3) {
+    transition-delay: 1.2s;
+}
+
+.order__item:nth-child(4) {
+    transition-delay: 1.8s;
 }
 
 .order__item-content {
@@ -959,14 +995,6 @@
     align-items: center;
     padding: .4rem;
     padding-bottom: 1.5rem;
-    opacity: 0;
-    transform: translateY(24px) scale(0.05);
-    transition: opacity 0.7s ease, transform 0.7s cubic-bezier(.2, .8, .2, 1);
-}
-
-.order__item-icon.is-visible {
-    opacity: 1;
-    transform: translateY(0) scale(1);
 }
 
 .order__item-title {
@@ -1106,11 +1134,10 @@
     text-align: center;
     padding-bottom: 1rem;
     opacity: 0;
-    transform: translateX(0);
 }
 
 .bottom-note.is-visible {
-    animation: slide-left-right 1s ease-out forwards;
+    animation: slide-left-right .7s ease-out forwards;
 }
 
 
@@ -1119,17 +1146,12 @@
 
 @keyframes slide-left-right {
     0% {
-        opacity: 0;
-        transform: translateX(-2rem);
-    }
-
-    1% {
         opacity: 1;
+        transform: translateX(-8rem);
     }
-
+    
     50% {
-        opacity: 1;
-        transform: translateX(2rem);
+        transform: translateX(6rem);
     }
 
     100% {
